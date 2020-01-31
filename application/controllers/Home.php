@@ -20,10 +20,15 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->load->view('website/home_page');
+	}
+
+	public function login()
+	{
 		$this->load->view('auth/login');
 	}
 
-	public function daftar()
+		public function daftar()
 	{
 		$this->load->view('auth/registration');
 	}

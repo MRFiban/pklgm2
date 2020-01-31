@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost/pklgm2/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
