@@ -23,6 +23,4 @@ class Home extends CI_Controller {
 		$this->load->view('website/home_page');
 	}
 
-	
-
 }
