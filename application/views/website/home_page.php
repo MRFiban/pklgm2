@@ -16,7 +16,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	<ul class="navbar-nav ml-auto pr-lg-5 p-3">
+	<ul class="navbar-nav ml-auto pr-lg-0 p-3">
       <li class="nav-item active">
         <a class="nav-link" href="#">HOME&nbsp;<span class="sr-only">(current)</span></a>
       </li>
