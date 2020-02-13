@@ -13,10 +13,12 @@ class Auth extends CI_Controller
 
     public function login()
     {
-        $data['title'] = 'Login Pages';
-        $this->load->view('templates/auth_header');
-        $this->load->view('auth/login');
-        $this->load->view('templates/auth_footer');
+        if ($this->form_validation->run == false) {
+            $data['title'] = 'Login Pages';
+            $this->load->view('templates/auth_header');
+            $this->load->view('auth/login');
+            $this->load->view('templates/auth_footer');
+        }
     }
 
     public function registration()
@@ -38,11 +40,11 @@ class Auth extends CI_Controller
             $this->load->view('templates/auth_footer');
         } else {
             $data = [
-                'name' => $this->input->post('name', true),
-                'email' => $this->input->post('email', true),
+                'name' => htmlspecialchars($this->input->post('name', true)),
+                'email' => htmlspecialchars($this->input->post('email', true)),
                 'image' => 'default.jpg',
                 'password' => password_hash(
-                    $this->input->post('password'),
+                    $this->input->post('password1'),
                     PASSWORD_DEFAULT
                 ),
                 'role_id' => 2,
