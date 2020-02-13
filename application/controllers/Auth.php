@@ -22,8 +22,28 @@ class Auth extends CI_Controller
             $this->load->view('templates/auth_header', $data);
             $this->load->view('auth/login');
             $this->load->view('templates/auth_footer');
+        } else {
+            //validasinya success
+            $this->_login();
         }
     }
+
+
+    private function _login()
+    {
+        $email = $this->input->post('email');
+        $password = $this->input->post('password');
+
+        $user = $this->db->get_where('user', ['email' => $email])->row_array();
+        if ($user) {
+            //usernya ada
+        } else {
+            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Congratulation! your acccount has been created. Please Login </div>');
+            redirect('auth/login');
+        }
+    }
+
+
 
     public function registration()
     {
