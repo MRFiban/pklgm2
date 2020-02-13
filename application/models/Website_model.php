@@ -19,31 +19,35 @@ class Website_model extends CI_Model {
     // Tambahkan if apakah $mode save atau update
     // Karena ketika update, id tidak harus divalidasi
     // Jadi id di validasi hanya ketika menambah data user saja
-    if($mode == "save")
-      $this->form_validation->set_rules('input_id', 'id', 'required|numeric|max_length[11]');
-    
-    $this->form_validation->set_rules('input_nama', 'Nama', 'required|max_length[50]');
-    $this->form_validation->set_rules('input_jeniskelamin', 'Jenis Kelamin', 'required');
-    $this->form_validation->set_rules('input_telp', 'telp', 'required|numeric|max_length[15]');
-    $this->form_validation->set_rules('input_alamat', 'Alamat', 'required');
-      
-    if($this->form_validation->run()) // Jika validasi benar
+  public function registration()
+   {
+    $this->form_validation->set_rules('name', 'Nama', 'required|trim');
+    $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[user.email]');
+    $this->form_validation->set_rules('password1', 'Password', 'required|trim|min_length[3]|matches[password2]', 
+         ['matches' => 'password dont match', 'min_length' => 'password too shorts']);
+    $this->form_validation->set_rules('password2', 'Password', 'required|trim|matches[password1]');
+   }
+
+    if($this->form_validation->run())// Jika validasi benar
+    {
       return TRUE; // Maka kembalikan hasilnya dengan TRUE
-    else // Jika ada data yang tidak sesuai validasi
+      else // Jika ada data yang tidak sesuai validasi
       return FALSE; // Maka kembalikan hasilnya dengan FALSE
-  }
+    }
   
   // Fungsi untuk melakukan simpan data ke tabel siswa
   public function save(){
-    $data = array(
-      "nis" => $this->input->post('input_nis'),
-      "nama" => $this->input->post('input_nama'),
-      "jenis_kelamin" => $this->input->post('input_jeniskelamin'),
-      "telp" => $this->input->post('input_telp'),
-      "alamat" => $this->input->post('input_alamat')
-    );
+    $data = array[
+      "name" => $this->input->post('name'),
+      "password" => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
+      "email" => $this->input->post('email'),
+      "image" => 'default.jpg',
+      "role_id" => 2,
+      "is_active" => 1,
+      "date_created" => time()
+    ];
     
-    $this->db->insert('siswa', $data); // Untuk mengeksekusi perintah insert data
+    $this->db->insert('user', $data); // Untuk mengeksekusi perintah insert data
   }
   
   // Fungsi untuk melakukan ubah data siswa berdasarkan NIS siswa
