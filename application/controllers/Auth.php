@@ -113,4 +113,37 @@ class Auth extends CI_Controller
         $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> You have been logout! </div>');
         redirect('auth/login');
     }
+
+    public function forgotpassword()
+    {
+        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+        if ($this->form_validation->run() == false) {
+            $data['title'] = 'Forgot Passwrod';
+            $this->load->view('templates/auth_header', $data);
+            $this->load->view('auth/forgot-password');
+            $this->load->view('templates/auth_footer');
+        } else {
+            $email = $this->input->post('email');
+            $user = $this->db->get_where('user', ['email' => $email, 'is_active' => 1])->row_array();
+
+            if ($user) {
+                $token = base64_encode(random_bytes(32));
+                $user_token = [
+                    'email' => $email,
+                    'token' => $token,
+                    'date_created' => time()
+                ];
+
+                $this->db->insert('user_token', $user_token);
+                $this->_sendEmail($token, 'forgot');
+
+                $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Please your email to reset your password! </div>');
+                redirect('auth/forgotpassword');
+            } else {
+
+                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Email is not registered or activated! </div>');
+                redirect('auth/forgotpassword');
+            }
+        }
+    }
 }
