@@ -21,14 +21,12 @@
 
                 <?= $this->session->flashdata('message'); ?>
 
-                <form class="user" method="post" action="<?= base_url('auth/login'); ?>">
+                <form class="user">
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Enter Email Address..." value="<?= set_value('email'); ?>">
-                    <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
+                    <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Enter Email Address...">
                   </div>
                   <div class="form-group">
                     <input type="password" class="form-control form-control-user" id="Password" name="password" placeholder="Password">
-                    <?= form_error('password', '<small class="text-danger pl-3">', '</small>'); ?>
                   </div>
                   <button type="submit" class="btn btn-primary btn-user btn-block">
                     Login
