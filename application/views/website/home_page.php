@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
 
 </head>
 
@@ -25,7 +26,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto pr-lg-0 p-3">
             <li class="nav-item active">
-              <a class="nav-link" href="#">HOME&nbsp;<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true">HOME&nbsp;</i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">PROFIL&nbsp;</a>
@@ -120,7 +121,11 @@
         </div>
       </div>
     </div>
-
+<!-- FOOTER -->
+<div class="footer-copyright text-center py-3 navbar-light bg-navbar"><font color="black" face="montsserat">© 2020 Copyright:
+    <a href="#"><font color="black" face="montsserat"> RAMADHAN</a>
+  </div>
+  <!-- footer -->
     <!--  javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

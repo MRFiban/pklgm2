@@ -4399,7 +4399,10 @@ input[type="button"].btn-block {
   font-size:19;
   font-weight: bold;
   font-family: 'Hind Siliguri', sans-serif;
-  
+}
+.nav-item:hover{
+  background:white;
+  border-radius: 3px;
 }
 
 .navbar-toggler {
