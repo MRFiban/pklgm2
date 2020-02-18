@@ -6,9 +6,6 @@
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
-<<<<<<< HEAD
-  <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
-=======
   <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
   <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
 
@@ -16,7 +13,6 @@
   <!-- Custom fonts for this template-->
   <link href="<?= base_url('assets/'); ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
->>>>>>> parent of 3b8a5b4... Merge branch 'WIP' of https://github.com/MRFiban/pklgm2 into WIP
 
 </head>
 
@@ -60,12 +56,7 @@
               </div>
             </li>
 
-            <li class="nav-item">
-<<<<<<< HEAD
-              <a class="nav-link" href="<?php echo base_url() ?>auth/login">LOGIN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-=======
               <a class="nav-link" href="<?php echo base_url() ?>auth/login"><button type="button" class="btn btn-outline-info">&nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;</button></a>
->>>>>>> parent of 3b8a5b4... Merge branch 'WIP' of https://github.com/MRFiban/pklgm2 into WIP
             </li>
           </ul>
         </div>
