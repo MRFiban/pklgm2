@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
-  <link href="" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
 
 </head>
 
