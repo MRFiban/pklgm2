@@ -19,8 +19,9 @@
 <body>
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand ml-1" href="#" style="font-family: montserrat;"> <img src="logo_warna.png" width="100" height="60" class="d-inline-block align-top rounded-circle" alt="">
-GLOBAL MEKAR MANDIRI</a>
+    <a class="navbar-brand ml-1" href="#" style="font-family: montserrat;"> 
+      <img src="logo_warna.png" width="100" height="60" class="d-inline-block align-top rounded-circle" alt="">
+    GLOBAL MEKAR MANDIRI</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -131,8 +132,8 @@ GLOBAL MEKAR MANDIRI</a>
       </div>
     </div>
 <!-- FOOTER -->
-<div class="footer-copyright text-center py-3 navbar-light bg-dark"><font color="black" face="montsserat">© 2020 Copyright :
-    <a href="#"><font color="black" face="montsserat">BDG , Indonesia</a>
+<div class="footer-copyright text-center py-3 navbar-light bg-dark"><font color="black" face="montsserat">© 2020 Copyright |
+    <a href="#"><font color="black" face="montsserat">TriMousquetaire.inc</a>
   </div>
   <!-- footer -->
     <!--  javascript -->
