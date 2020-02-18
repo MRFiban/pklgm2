@@ -49,7 +49,7 @@
               <a class="nav-link" href="#">ABOUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
 
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>auth/login">LOGIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              <a class="nav-link" href="<?php echo base_url() ?>auth/login">LOGIN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
             </li>
           </ul>
         </div>
