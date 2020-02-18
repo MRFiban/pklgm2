@@ -1,9 +1,41 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-</nav>
+<!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand ml-5" href="#">GLOBAL MEKAR MANDIRI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto pr-lg-3">
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto pr-lg-0 p-3">
+            <li class="nav-item active">
+              <a class="nav-link" href="<?php echo base_url() ?>home"><i class="fa fa-home">HOME&nbsp;</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PROFILE&nbsp;</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PRODUCT
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Electrical</a>
+                <a class="dropdown-item" href="#">Mechanical</a>
+                <div class="#"></div>
+                <a class="dropdown-item" href="#">Informasi Tehnologi</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          </ul>
+        </div>
+  </nav>
+  <br>
+  <br>
 <div class="container">
   <!-- Outer Row -->
 
