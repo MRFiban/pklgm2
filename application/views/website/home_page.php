@@ -6,15 +6,14 @@
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
-  <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
 
 </head>
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
     <a class="navbar-brand ml-1" href="#" style="font-family: montserrat;"> 
-      <img src="logo_warna.png" width="100" height="60" class="d-inline-block align-top rounded-circle" alt="">
+      <img src="#" width="#" height="#" class="d-inline-block align-top rounded-circle" alt="">
     GLOBAL MEKAR MANDIRI</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -28,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto pr-lg-0 p-3">
             <li class="nav-item active">
-              <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true">HOME&nbsp;</i></a>
+              <a class="nav-link" href="#">HOME&nbsp;</i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">PROFIL&nbsp;</a>
@@ -124,7 +123,7 @@
       </div>
     </div>
 <!-- FOOTER -->
-<div class="footer-copyright text-center py-3 navbar-light bg-dark"><font color="black" face="montsserat">© 2020 Copyright |
+<div class="footer-copyright text-center py-3 navbar-light bg-navbar"><font color="black" face="montsserat">© 2020 Copyright |
     <a href="#"><font color="black" face="montsserat">TriMousquetaire.inc</a>
   </div>
   <!-- footer -->
