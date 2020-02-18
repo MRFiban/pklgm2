@@ -19,5 +19,10 @@
   <!-- Custom styles for this template-->
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/pklgm2/style.css">
 
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/style.css">
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
 
 </head>
