@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
-
   <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
   <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
 
@@ -36,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto pr-lg-0 p-3">
             <li class="nav-item active">
-              <a class="nav-link" href="#">HOME&nbsp;</i></a>
+              <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true">HOME&nbsp;</i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">PROFILE&nbsp;</a>
@@ -57,16 +56,8 @@
               </div>
             </li>
 
-            <<<<<<< HEAD <a class="nav-link" href="<?php echo base_url() ?>auth/login"><button type="button" class="btn btn-outline-info">&nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;</button></a>
-              =======
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">LOGIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-
-                <a class="nav-link" href="<?php echo base_url() ?>auth/login"><button type="button" class="btn btn-outline-info">&nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;</button></a>
-
-                >>>>>>> a3303e1bd8ebc507b0ffd6232d005345cd70dcda
-              </li>
+            <a class="nav-link" href="<?php echo base_url() ?>auth/login"><button type="button" class="btn btn-outline-info">&nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;</button></a>
+            </li>
           </ul>
         </div>
   </nav>
@@ -142,28 +133,18 @@
         </div>
       </div>
     </div>
-    <<<<<<< HEAD <!-- FOOTER -->
-      <div class="footer-copyright text-center py-3 navbar-light bg-dark">
-        <font color="black" face="montsserat">© 2020 Copyright |
-          <a href="#">
-            <font color="black" face="montsserat">TriMousquetaire.inc
-          </a>
-      </div>
-      <!-- footer -->
-      =======
-      <!-- FOOTER -->
-      <div class="footer-copyright text-center py-3 navbar-light bg-navbar">
-        <font color="black" face="montsserat">© 2020 Copyright |
-          <a href="#">
-            <font color="black" face="montsserat">TriMousquetaire.inc
-          </a>
-      </div>
-      <!-- footer -->
-      >>>>>>> a3303e1bd8ebc507b0ffd6232d005345cd70dcda
-      <!--  javascript -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- FOOTER -->
+    <div class="footer-copyright text-center py-3 navbar-light bg-dark">
+      <font color="black" face="montsserat">© 2020 Copyright |
+        <a href="#">
+          <font color="black" face="montsserat">TriMousquetaire.inc
+        </a>
+    </div>
+    <!-- footer -->
+    <!--  javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

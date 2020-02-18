@@ -4401,7 +4401,7 @@ input[type="button"].btn-block {
   font-family: 'Hind Siliguri', sans-serif;
 }
 .nav-item:hover{
-  background:var(--blue);
+  background:white;
   border-radius: 3px;
 }
 
