@@ -15,7 +15,8 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand ml-1" href="#" style="font-family: montserrat;"> 
       <img src="logo_warna.png" width="100" height="60" class="d-inline-block align-top rounded-circle" alt="">
-    GLOBAL MEKAR MANDIRI</a>
+      <i class="fa fa-home">
+    GLOBAL MEKAR MANDIRI</i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -48,7 +49,7 @@
               <a class="nav-link" href="#">ABOUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">LOGIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              <a class="nav-link" href="<?php echo base_url() ?>auth/login">LOGIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
             </li>
           </ul>
         </div>
