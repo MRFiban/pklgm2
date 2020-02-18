@@ -6,7 +6,17 @@
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+<<<<<<< HEAD
   <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+=======
+  <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+  <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
+
+
+  <!-- Custom fonts for this template-->
+  <link href="<?= base_url('assets/'); ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+>>>>>>> parent of 3b8a5b4... Merge branch 'WIP' of https://github.com/MRFiban/pklgm2 into WIP
 
 </head>
 
@@ -15,14 +25,15 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand ml-1" href="#" style="font-family: montserrat;"> 
       <img src="logo_warna.png" width="100" height="60" class="d-inline-block align-top rounded-circle" alt="">
-    GLOBAL MEKAR MANDIRI</a>
+      <i class="fa fa-home">
+    GLOBAL MEKAR MANDIRI</i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto pr-lg-5 p-3">
+      <ul class="navbar-nav ml-auto pr-lg-3">
 
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,8 +42,12 @@
               <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true">HOME&nbsp;</i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PROFIL&nbsp;</a>
+              <a class="nav-link" href="#">PROFILE&nbsp;</a>
             </li>
+
+              <li class="nav-item">
+              <a class="nav-link" href="#">&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</a>
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 PRODUCT
@@ -44,11 +59,13 @@
                 <a class="dropdown-item" href="#">Informasi Tehnologi</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">LOGIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+<<<<<<< HEAD
+              <a class="nav-link" href="<?php echo base_url() ?>auth/login">LOGIN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+=======
+              <a class="nav-link" href="<?php echo base_url() ?>auth/login"><button type="button" class="btn btn-outline-info">&nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;</button></a>
+>>>>>>> parent of 3b8a5b4... Merge branch 'WIP' of https://github.com/MRFiban/pklgm2 into WIP
             </li>
           </ul>
         </div>
@@ -98,8 +115,8 @@
 
     <div class="text text-center" style="font-family: montserrat;">
       <br><br><br>
-      <h4> SOFTWARE DEVELOPMENT • WEB DEVELOPMENT </h4>
-      <h1><u> CREATIVE & EXPERIENCED </u></h1>
+      <h4> SOFTWARE DEVELOPMENT • GREENTECH COMPANY • WEB DEVELOPMENT </h4>
+      <h1 align="center"><u><CENTER> CREATIVE & EXPERIENCED </CENTER></u></h1>
       <h3> PT.GLOBAL MEKAR MANDIRI </h3>
     </div>
 
