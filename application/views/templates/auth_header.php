@@ -10,7 +10,7 @@
   <meta name="author" content="">
 
   <title>
-    PT.GLOBAL MEKAR MANDIRI
+    GreenTech Company
   </title>
 
   <!-- Custom fonts for this template-->
