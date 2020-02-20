@@ -78,13 +78,16 @@ class Auth extends CI_Controller
         ]);
         $this->form_validation->set_rules('password2', 'Password', 'required|trim|min_length[3]|matches[password1]');
 
-        if ($this->form_validation->run() == false) {
+        if ($this->form_validation->run() == false) 
+        {
             $data['title'] = 'WPU User Registration';
 
             $this->load->view('templates/auth_header', $data);
             $this->load->view('auth/registration');
             $this->load->view('templates/auth_footer');
-        } else {
+        } 
+        else 
+        {
             $data = [
                 'name' => htmlspecialchars($this->input->post('name', true)),
                 'email' => htmlspecialchars($this->input->post('email', true)),
@@ -98,7 +101,7 @@ class Auth extends CI_Controller
                 'date_created' => time()
             ];
 
-            // $this->db->insert('user', $data);
+            $this->db->insert('user', $data);
 
             $this->_sendEmail();
 
