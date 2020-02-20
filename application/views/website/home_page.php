@@ -18,11 +18,10 @@
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
     <a class="navbar-brand ml-1" href="#" style="font-family: montserrat;">
-      <img src="<?= base_url('assets/images/logo_warna.png'); ?>" width="100" height="60" class="d-inline-block align-top rounded-circle" alt="">
-      <i class="fa fa-home">
-        GLOBAL MEKAR MANDIRI</i></a>
+      <img src="<?= base_url('assets/images/logo_warna.png'); ?>" width="300" height="80" class="d-inline-block align-top rounded-circle" alt="">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -38,15 +37,15 @@
               <a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true">HOME&nbsp;</i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PROFILE&nbsp;</a>
+              <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true">PROFIL&nbsp;</i></a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</a>
+              <a class="nav-link" href="#"><i class="fa fa-address-card" aria-hidden="true">&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</i></a>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                PRODUCT
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cart-plus" aria-hidden="true">
+                  PRODUCT</i>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Electrical</a>

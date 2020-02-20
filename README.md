@@ -1,2 +1,2 @@
 # pklgm2
-untuk mengembangkan kemampuan programming 
+untuk mengembangkan kemampuan programming!!
