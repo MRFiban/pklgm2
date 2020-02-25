@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="<?= base_url('assets/fontawesome/svgs/'); ?>brands">
   <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
 
 
@@ -18,10 +19,9 @@
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand ml-1" href="#" style="font-family: montserrat;">
-      <img src="<?= base_url('assets/images/logo_warna.png'); ?>" width="300" height="80" class="d-inline-block align-top rounded-circle" alt="">
-    </a>
+      <img src="<?= base_url('#'); ?>" width="#" height="#" class="d-inline-block align-top rounded-circle" alt="">GLOBAL MEKAR MANDIRI</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -55,7 +55,8 @@
               </div>
             </li>
 
-            <a class="nav-link" href="<?php echo base_url() ?>auth/login"><button type="button" class="btn btn-outline-info">&nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;</button></a>
+            <a class="nav-link" href="<?php echo base_url() ?>auth/login"><i class="fa fa-sign-in" aria-hidden="true">
+                &nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;</i></button></a>
             </li>
           </ul>
         </div>

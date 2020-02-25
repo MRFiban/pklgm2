@@ -4396,12 +4396,12 @@ input[type="button"].btn-block {
   flex-grow: 1;
   -ms-flex-align: center;
   align-items: center;
-  font-size:19;
-  font-weight: bold;
+  font-size:16;
+  font-weight:;
   font-family: 'Hind Siliguri', sans-serif;
 }
 .nav-item:hover{
-  background:white;
+  background:orange;
   border-radius: 3px;
 }
 
