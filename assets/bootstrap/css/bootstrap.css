@@ -4350,16 +4350,21 @@ input[type="button"].btn-block {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 20px;
   line-height: inherit;
   white-space: nowrap;
   font-family:'Montserrat'sans-serif; 
   font-weight: bold;
-  font-size: 30;
+ 
 }
 .hayalasola{
   color:black;
-  background-color:lightblue;
+  background-color:chocolate;
+}
+
+.haya{
+  color:black;
+  background-color:white;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
@@ -4400,11 +4405,12 @@ input[type="button"].btn-block {
   flex-grow: 1;
   -ms-flex-align: center;
   align-items: center;
-  font-size:16;
-  font-weight:;
+  font-size:18px;
+  font-weight:19px;
   font-family: 'Hind Siliguri', sans-serif;
+
 }
-.nav-item:hover{
+.nav-link:hover{
   background:orange;
   border-radius: 3px;
 }
