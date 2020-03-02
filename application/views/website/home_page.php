@@ -1,66 +1,10 @@
 <html>
 
 <head>
-  <title>GreenTech Company</title>
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/style.css">
-  <link rel="stylesheet" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="<?= base_url('assets/fontawesome/svgs/'); ?>brands">
-  <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
-
-
-  <!-- Custom fonts for this template-->
-  <link href="<?= base_url('assets/'); ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-</head>
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand ml-1" href="#" style="font-family: montserrat;">
-      GLOBAL MEKAR MANDIRI</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto pr-lg-3">
-
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto pr-lg-0 p-3">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">HOME&nbsp;</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PROFIL&nbsp;</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</a>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                PRODUCT
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Electrical</a>
-                <a class="dropdown-item" href="#">Mechanical</a>
-                <div class="#"></div>
-                <a class="dropdown-item" href="#">Informasi Tehnologi</a>
-              </div>
-            </li>
-
-            <a class="nav-link" href="<?php echo base_url() ?>auth/login">
-              &nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;</button></a>
-            </li>
-          </ul>
-        </div>
-  </nav>
+  <!-- SUDAH DI LINK -->
   <!-- navbar -->
 
   <!-- CAROSEL CODING -->
@@ -172,20 +116,13 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, sit dolorum distinctio suscipit non repellendus eaque at illum laudantium, voluptatum libero ut minima facere quia blanditiis officia atque nostrum aspernatur.</p>
       </div>
     </div>
-
-
-
     <!-- jumbotron -->
 
 
     <!-- FOOTER -->
-    <div class="footer-copyright text-center py-3 navbar-light bg-dark">
-      <font color="black" face="montsserat">© 2020 Copyright |
-        <a href="#">
-          <font color="black" face="montsserat">TriMousquetaire.inc
-        </a>
-    </div>
+    <!-- AUTH_FOOTER -->
     <!-- footer -->
+
     <!--  javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
