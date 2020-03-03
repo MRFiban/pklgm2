@@ -70,7 +70,7 @@
                 <a class="dropdown-item" href="<?php echo base_url() ?>home/electrical">Electrical</a>
                 <a class="dropdown-item" href="<?php echo base_url() ?>home/mechanical">Mechanical</a>
                 <div class="#"></div>
-                <a class="dropdown-item" href="<?php echo base_url() ?>home/informasiteknologi">Informasi Tehnologi</a>
+                <a class="dropdown-item" href="<?php echo base_url() ?>home/informasi_teknologi">Informasi Tehnologi</a>
               </div>
             </li>
 
