@@ -67,10 +67,10 @@
                 Product
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Electrical</a>
-                <a class="dropdown-item" href="#">Mechanical</a>
+                <a class="dropdown-item" href="<?php echo base_url() ?>home/electrical">Electrical</a>
+                <a class="dropdown-item" href="<?php echo base_url() ?>home/mechanical">Mechanical</a>
                 <div class="#"></div>
-                <a class="dropdown-item" href="#">Informasi Tehnologi</a>
+                <a class="dropdown-item" href="<?php echo base_url() ?>home/informasiteknologi">Informasi Tehnologi</a>
               </div>
             </li>
 
