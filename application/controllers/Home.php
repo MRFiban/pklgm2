@@ -11,7 +11,7 @@ class Home extends CI_Controller {
     }
 
 
- function index()
+ public function index()
 	{
 		$this->load->view('website/home_page');
 
@@ -21,6 +21,11 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('website/inventaris');
 
+	}
+
+public function about()
+	{
+		$this->load->view('website/about');
 	}
 
 }
