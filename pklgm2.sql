@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 13, 2020 at 08:21 AM
+-- Generation Time: Mar 02, 2020 at 02:41 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -44,10 +44,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
-(0, 'ridwanfathoni24@gmail.com', '', 'default.jpg', '$2y$10$QJcnQ6dzsffL7G1fXeM8QeObxHueiopfGTMG/8iP61Wc5QeC5sUPy', 2, 1, 1581498070),
-(0, 'neanganartos24@gmail.com', '', 'default.jpg', '$2y$10$hKo7.OuoJgfQiKKAlJg/yeFDRRojg7ZRhrJxDtKizYTw9WUlnG8Di', 2, 1, 1581498188),
-(0, 'Muhammad Ridwan Fathoni', 'ridwanfathoni24@gmail.com', 'default.jpg', '$2y$10$.wa2h4WHzkgdlf6K5qWaouXXchBB/t4h1S.aGOlin1WnmxaY.Idim', 2, 1, 1581499474),
-(0, 'Muhammad Ridwan Fathoni', 'neanganartos24@gmail.com', 'default.jpg', '$2y$10$23pPNRmbbYI9N9gFOFMXue5aAtTTZNr3if/RJdEu7.9IST.61F0Qi', 2, 1, 1581500969);
+(1, 'Muhammad Ridwan Fathoni', 'ridwanfathoni24@gmail.com', 'default.jpg', '$2y$10$fBk5/qpfS6yRL6TwVL2hwe2LWXBpHBWCziMW7/CXu6DwZmK..EE5u', 2, 1, 1581644174),
+(15, 'toniindriyanto', 'toniindriyanto27@gmail.com', 'default.jpg', '$2y$10$1t31Mf7DDz1j8RV/L0b0.eRpTJdSMuLwbYYF29A8N2T82d1qTNEWm', 2, 0, 1582774759);
 
 -- --------------------------------------------------------
 
@@ -68,9 +66,36 @@ INSERT INTO `user_role` (`id`, `role`) VALUES
 (1, 'Administrator'),
 (2, 'Member');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_token`
+--
+
+CREATE TABLE `user_token` (
+  `id` int(11) NOT NULL,
+  `email` varchar(128) NOT NULL,
+  `token` varchar(128) NOT NULL,
+  `date_created` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user_token`
+--
+
+INSERT INTO `user_token` (`id`, `email`, `token`, `date_created`) VALUES
+(1, 'indrianto662@gmail.com', 'CAaXvTVJ0LOL9xONTsZRgGVXzd1UingR/SgaAMFUljo=', 1582535578),
+(16, 'ridwanfathoni24@gmail.com', 'yDZU5LdqF9g4QWECmLvIL6yDWtowS5e/eCZEQ51Fhpc=', 1582776153);
+
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `user_role`
@@ -79,14 +104,32 @@ ALTER TABLE `user_role`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `user_token`
+--
+ALTER TABLE `user_token`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `user_role`
 --
 ALTER TABLE `user_role`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `user_token`
+--
+ALTER TABLE `user_token`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

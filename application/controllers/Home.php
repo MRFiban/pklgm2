@@ -1,31 +1,78 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Home extends CI_Controller
+{
 
 	public function __construct()
-    {
-        parent::__construct();
-        $this->load->library('form_validation');
-        $this->load->helper('url');
-    }
-
+	{
+		parent::__construct();
+		$this->load->library('form_validation');
+		$this->load->helper('url');
+	}
 
  public function index()
+
+	function index()
 	{
+		$this->load->view('templates/auth_header');
 		$this->load->view('website/home_page');
-
+		$this->load->view('templates/auth_footer');
 	}
 
- function inventaris()
+	function inventaris()
 	{
+		$this->load->view('templates/auth_header');
 		$this->load->view('website/inventaris');
-
+		$this->load->view('templates/auth_footer');
 	}
 
-public function about()
+
+	function galery()
+	{
+		$this->load->view('templates/auth_header');
+		$this->load->view('website/galery');
+		$this->load->view('templates/auth_footer');
+	}
+
+	function profil()
+	{
+		$this->load->view('templates/auth_header');
+		$this->load->view('website/profil');
+		$this->load->view('templates/auth_footer');
+	}
+
+	function about()
+	{
+		$this->load->view('templates/auth_header');
+		$this->load->view('website/about');
+		$this->load->view('templates/auth_footer');
+	}
+
+	function electrical()
+	{
+		$this->load->view('templates/auth_header');
+		$this->load->view('website/electrical');
+		$this->load->view('templates/auth_footer');
+	}
+
+	function mechanical()
+	{
+		$this->load->view('templates/auth_header');
+		$this->load->view('website/mechanical');
+		$this->load->view('templates/auth_footer');
+	}
+
+
+ public function about()
 	{
 		$this->load->view('website/about');
 	}
 
+	function informasi_teknologi()
+	{
+		$this->load->view('templates/auth_header');
+		$this->load->view('website/informasi_teknologi');
+		$this->load->view('templates/auth_footer');
+	}
 }

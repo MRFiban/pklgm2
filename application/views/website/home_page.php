@@ -1,23 +1,9 @@
 <html>
 
 <head>
-  <title>GreenTech Company</title>
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/style.css">
-  <link rel="stylesheet" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="<?= base_url('assets/fontawesome/svgs/'); ?>brands">
-  <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
-
-
-  <!-- Custom fonts for this template-->
-  <link href="<?= base_url('assets/'); ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-</head>
 
 <body>
+
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand ml-1" href="#" style="font-family: montserrat;">
@@ -61,8 +47,7 @@
           </ul>
         </div>
   </nav>
-  <!-- navbar -->
-
+  <!-- SUDAH DI LINK -->
   <!-- CAROSEL CODING -->
   <div class="img.resize">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -172,24 +157,13 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, sit dolorum distinctio suscipit non repellendus eaque at illum laudantium, voluptatum libero ut minima facere quia blanditiis officia atque nostrum aspernatur.</p>
       </div>
     </div>
-
-
-
     <!-- jumbotron -->
 
 
     <!-- FOOTER -->
-    <div class="footer-copyright text-center py-3 navbar-light bg-dark">
-      <font color="black" face="montsserat">© 2020 Copyright |
-        <a href="#">
-          <font color="black" face="montsserat">TriMousquetaire.inc
-        </a>
-    </div>
+    <!-- AUTH_FOOTER -->
     <!-- footer -->
-    <!--  javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</body>
 
+    <!--  javascript -->
+</body>
 </html>
