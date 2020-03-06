@@ -12,8 +12,6 @@ class Home extends CI_Controller
 	}
 
  public function index()
-
-	function index()
 	{
 		$this->load->view('templates/auth_header');
 		$this->load->view('website/home_page');
@@ -22,13 +20,13 @@ class Home extends CI_Controller
 
 	function inventaris()
 	{
-		$this->load->view('templates/auth_header');
+	
 		$this->load->view('website/inventaris');
 		$this->load->view('templates/auth_footer');
 	}
 
 
-	function galery()
+	function gallery()
 	{
 		$this->load->view('templates/auth_header');
 		$this->load->view('website/galery');
@@ -44,14 +42,11 @@ class Home extends CI_Controller
 
 	function about()
 	{
-		$this->load->view('templates/auth_header');
 		$this->load->view('website/about');
-		$this->load->view('templates/auth_footer');
 	}
 
 	function electrical()
 	{
-		$this->load->view('templates/auth_header');
 		$this->load->view('website/electrical');
 		$this->load->view('templates/auth_footer');
 	}
@@ -61,12 +56,6 @@ class Home extends CI_Controller
 		$this->load->view('templates/auth_header');
 		$this->load->view('website/mechanical');
 		$this->load->view('templates/auth_footer');
-	}
-
-
- public function about()
-	{
-		$this->load->view('website/about');
 	}
 
 	function informasi_teknologi()

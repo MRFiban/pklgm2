@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?= $title; ?></title>
+    <title>GreenTech Company</title>
     </title>
 
     <!-- Custom fonts for this template-->
@@ -34,7 +34,7 @@
                 <div class="sidebar-brand-icon rotate-n">
                     <i class="fas fa-chalkboard-teacher"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">PT.GM2</div>
+                <div class="sidebar-brand-text mx-3"> <img src="<?= base_url('assets/img/logo_warna.png'); ?>" width="70" height="60" class="d-inline-block align-top rounded-circle"></div>
             </a>
 
             <!-- Divider -->
@@ -297,7 +297,7 @@
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" href="" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
@@ -352,10 +352,10 @@
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body">Do you sure want to logout from this page?</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="<?= base_url(); ?>home/index">Logout</a>
                 </div>
             </div>
         </div>

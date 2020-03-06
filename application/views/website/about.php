@@ -26,32 +26,50 @@
 
 <body id="page-top" background="<?= base_url('assets/img/swiss.jpg'); ?>">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto my-2 my-lg-0">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+   <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand ml-1" href="#" style="font-family: montserrat;">
+      GLOBAL MEKAR MANDIRI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto pr-lg-3">
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto pr-lg-0 p-3">
+            <li class="nav-item active">
+              <a class="nav-link" href="<?= base_url(); ?>home/index">HOME&nbsp;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?= base_url(); ?>home/profil">PROFIL&nbsp;</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo base_url() ?>home/about">&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</a>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PRODUCT
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="<?php echo base_url() ?>home/electrical">Electrical</a>
+                <a class="dropdown-item" href="<?php echo base_url() ?>home/mechanical">Mechanical</a>
+                <div class="#"></div>
+                <a class="dropdown-item" href="<?php echo base_url() ?>home/informasi_teknologi">Informasi Tehnologi</a>
+              </div>
+            </li>
+
+            <a class="nav-link" href="<?php echo base_url() ?>auth/login">
+              &nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;</button></a>
+            </li>
+          </ul>
+        </div>
+  </nav>
+  <!-- SUDAH DI LINK -->
   <!-- Masthead -->
   <header class="masthead">
     <div class="container h-100">
@@ -239,7 +257,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-light py-5">
+  <footer class="bg-light py-3">
     <div class="container">
       <div class="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
     </div>
@@ -255,34 +273,6 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
-
-</body>
-
-</html>
-
-<html>
-
-<head>
-    <title></title>
-</head>
-
-<body>
-    <h1 class="text-center font-weight-bold">
-        HALAMAN TENTANG KAMI</h1>
-
-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolores in, hic odio dolorem nostrum sit vitae. Accusamus eum quod consectetur, fugit quam tenetur debitis quas eos doloremque excepturi placeat.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dolorem, ea tempore officiis aut voluptates maxime eum unde, incidunt iure consequuntur minus! Nesciunt blanditiis voluptatem minus corporis, vitae porro sint!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus et optio consectetur illo reprehenderit vel officiis? Aut similique unde rerum debitis, praesentium tempora cum enim esse expedita soluta eum doloremque?
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ea debitis minus vel ab in, corrupti dolorum nemo officiis, assumenda autem dolore facere perferendis blanditiis architecto ex odio, eveniet ipsa!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit harum cum velit aliquam autem dolores ipsum iure reiciendis, adipisci laborum, consectetur beatae facilis voluptatibus aliquid nulla enim incidunt, dolor minus.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex distinctio quod, molestiae consectetur ut sequi incidunt non nihil dolorem iure eius rem maiores alias quo magni rerum dolores quibusdam provident.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque placeat consequuntur sed delectus! Repellat quaerat molestiae enim soluta veritatis quasi quidem voluptatum aut consequuntur expedita deleniti, ex facilis corrupti laboriosam.
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas adipisci nam ducimus fugiat natus placeat doloremque minima alias asperiores cupiditate tempora inventore, culpa veniam quae id sint dolor aut a?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nulla dolorum similique veniam labore id officia perspiciatis repellat at qui temporibus ea maxime quos perferendis atque laudantium, accusantium maiores impedit.
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis laborum quae nostrum ducimus vero veniam at culpa alias quas saepe sint, autem unde pariatur, molestias eveniet id eum provident. Magnam.
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit atque beatae illum amet, ab inventore? Iste natus repellendus, aut praesentium dolorum laboriosam quisquam, nihil nam, temporibus incidunt blanditiis reiciendis ab!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum reprehenderit possimus ad, ab dolores odit quae quidem error, harum numquam asperiores adipisci amet earum architecto, cum tenetur. Nulla, ad.
 
 </body>
 

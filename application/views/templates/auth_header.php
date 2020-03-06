@@ -30,7 +30,7 @@
 
 </head>
 
-<body class="bg-gradient-info">
+<body id="page-top" background="<?= base_url('assets/img/green.jpg'); ?>">
   <!-- navbar permanen -->
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -52,15 +52,15 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/galery">Galery&nbsp;</a>
+              <a class="nav-link" href="<?php echo base_url() ?>home/profil">Profile&nbsp;</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/profil">Profil&nbsp;</a>
+              <a class="nav-link" href="<?php echo base_url() ?>home/about">About&nbsp;</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/about">&nbsp;&nbsp;About&nbsp;&nbsp;</a>
+              <a class="nav-link" href="<?php echo base_url() ?>home/gallery">&nbsp;&nbsp;Gallery&nbsp;&nbsp;</a>
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
