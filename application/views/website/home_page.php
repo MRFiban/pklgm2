@@ -1,4 +1,3 @@
-
   <!-- CAROSEL CODING -->
   <div class="img.resize">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -108,4 +107,5 @@
   </section>
 
 </body>
+
 </html>

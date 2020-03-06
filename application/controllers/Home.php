@@ -11,7 +11,8 @@ class Home extends CI_Controller
 		$this->load->helper('url');
 	}
 
- public function index()
+
+	public function index()
 	{
 		$this->load->view('templates/auth_header');
 		$this->load->view('website/home_page');
