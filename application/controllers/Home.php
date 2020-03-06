@@ -11,9 +11,7 @@ class Home extends CI_Controller
 		$this->load->helper('url');
 	}
 
- public function index()
-
-	function index()
+	public function index()
 	{
 		$this->load->view('templates/auth_header');
 		$this->load->view('website/home_page');
@@ -61,12 +59,6 @@ class Home extends CI_Controller
 		$this->load->view('templates/auth_header');
 		$this->load->view('website/mechanical');
 		$this->load->view('templates/auth_footer');
-	}
-
-
- public function about()
-	{
-		$this->load->view('website/about');
 	}
 
 	function informasi_teknologi()
