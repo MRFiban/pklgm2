@@ -28,14 +28,17 @@
   <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
 
+   <!-- Theme CSS - Includes Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/creative.css">
+
 </head>
 
 <body id="page-top" background="<?= base_url('assets/img/green.jpg'); ?>">
   <!-- navbar permanen -->
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand ml-1" href="#" style="font-family: montserrat;">
-      GLOBAL MEKAR MANDIRI</a>
+    <div class="navbar-brand ml-1" href="#" style="font-family: montserrat;">
+      GLOBAL MEKAR MANDIRI</div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -48,19 +51,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto pr-lg-0 p-3">
             <li class="nav-item active">
-              <a class="nav-link" href="<?php echo base_url() ?>">Home&nbsp;</a>
+              <a class="nav-link" href="<?php echo base_url() ?>">Home&nbsp;&nbsp;</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/profil">Profile&nbsp;</a>
+              <a class="nav-link" href="<?php echo base_url() ?>home/profil">Profile&nbsp;&nbsp;</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/about">About&nbsp;</a>
+              <a class="nav-link" href="<?php echo base_url() ?>home/about">About&nbsp;&nbsp;</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/gallery">&nbsp;&nbsp;Gallery&nbsp;&nbsp;</a>
+              <a class="nav-link" href="<?php echo base_url() ?>home/gallery">Gallery&nbsp;</a>
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -75,10 +78,8 @@
             </li>
 
             <a class="nav-link" href="<?php echo base_url() ?>auth/login">
-              &nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;</button></a>
+              &nbsp;&nbsp;Login&nbsp;&nbsp;</button></a>
             </li>
           </ul>
         </div>
   </nav>
-
-  <!-- navbar permanen -->

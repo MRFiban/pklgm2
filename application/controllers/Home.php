@@ -43,7 +43,9 @@ class Home extends CI_Controller
 
 	function about()
 	{
+		$this->load->view('templates/auth_header');
 		$this->load->view('website/about');
+		$this->load->view('templates/auth_footer');
 	}
 
 	function electrical()

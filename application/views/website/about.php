@@ -17,59 +17,11 @@
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-  <!-- Plugin CSS -->
-  <link href="assets/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-  <!-- Theme CSS - Includes Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/creative.css">
 </head>
 
-<body id="page-top" background="<?= base_url('assets/img/swiss.jpg'); ?>">
-
-   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand ml-1" href="#" style="font-family: montserrat;">
-      GLOBAL MEKAR MANDIRI</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<body id="page-top">
 
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto pr-lg-3">
-
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto pr-lg-0 p-3">
-            <li class="nav-item active">
-              <a class="nav-link" href="<?= base_url(); ?>home/index">HOME&nbsp;</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?= base_url(); ?>home/profil">PROFIL&nbsp;</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/about">&nbsp;&nbsp;ABOUT&nbsp;&nbsp;</a>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                PRODUCT
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="<?php echo base_url() ?>home/electrical">Electrical</a>
-                <a class="dropdown-item" href="<?php echo base_url() ?>home/mechanical">Mechanical</a>
-                <div class="#"></div>
-                <a class="dropdown-item" href="<?php echo base_url() ?>home/informasi_teknologi">Informasi Tehnologi</a>
-              </div>
-            </li>
-
-            <a class="nav-link" href="<?php echo base_url() ?>auth/login">
-              &nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;</button></a>
-            </li>
-          </ul>
-        </div>
-  </nav>
-  <!-- SUDAH DI LINK -->
   <!-- Masthead -->
   <header class="masthead">
     <div class="container h-100">
@@ -223,7 +175,9 @@
       </div>
     </div>
   </section>
-
+<hr>
+<hr>
+<br>
   <!-- Call to Action Section -->
   <section class="page-section bg-primary text-white">
     <div class="container text-center">
@@ -237,8 +191,8 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="mt-0">Let's Get In Touch!</h2>
-          <hr class="divider my-4">
+          <h2 class="mt-0 text-center text-white">Contact Us !</h2>
+          <center><hr class="divider my-4"></center>
           <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
         </div>
       </div>
@@ -256,12 +210,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-light py-3">
-    <div class="container">
-      <div class="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
-    </div>
-  </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
