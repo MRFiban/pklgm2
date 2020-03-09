@@ -21,7 +21,7 @@ class Home extends CI_Controller
 
 	function inventaris()
 	{
-	
+
 		$this->load->view('website/inventaris');
 		$this->load->view('templates/auth_footer');
 	}
@@ -43,6 +43,7 @@ class Home extends CI_Controller
 
 	function about()
 	{
+		$this->load->view('templates/auth_header');
 		$this->load->view('website/about');
 	}
 
