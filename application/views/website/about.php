@@ -17,11 +17,6 @@
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-  <!-- Plugin CSS -->
-  <link href="assets/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-  <!-- Theme CSS - Includes Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/creative.css">
 </head>
 
 <body id="page-top" background="<?= base_url('assets/img/swiss.jpg'); ?>">
@@ -183,7 +178,9 @@
       </div>
     </div>
   </section>
-
+  <hr>
+  <hr>
+  <br>
   <!-- Call to Action Section -->
   <section class="page-section bg-primary text-white">
     <div class="container text-center">
@@ -197,8 +194,10 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="mt-0">Let's Get In Touch!</h2>
-          <hr class="divider my-4">
+          <h2 class="mt-0 text-center text-white">Contact Us !</h2>
+          <center>
+            <hr class="divider my-4">
+          </center>
           <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
         </div>
       </div>
@@ -216,12 +215,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-light py-3">
-    <div class="container">
-      <div class="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
-    </div>
-  </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>

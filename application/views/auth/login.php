@@ -1,7 +1,10 @@
+    <br>
+  <br>
+<br>
 
 <div class="container">
-  <!-- Outer Row -->
 
+  <!-- Outer Row -->
   <div class="row justify-content-center">
     <div class="col-lg-8">
       <div class="card o-hidden border-0 shadow-lg my-5">
@@ -44,9 +47,9 @@
 
     </div>
   </div>
-
 </div>
-    <br>
+
   <br>
-  <br>
     <br>
+      <br>
+

@@ -4,35 +4,44 @@
 <head>
 
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Creative - Start Bootstrap Theme</title>
+  <title>
+    GreenTech Company
+  </title>
 
-  <!-- Font Awesome Icons -->
-  <link href="<?= base_url(); ?>assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-  <!-- Plugin CSS -->
-  <link href="assets/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="<?= base_url('assets/'); ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-  <!-- Theme CSS - Includes Bootstrap -->
+  <!-- Custom styles for this template-->
+  <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/style.css">
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+
+   <!-- Theme CSS - Includes Bootstrap -->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/creative.css">
-</head><!-- Portfolio Section -->
 
-<body class="bg-dark">
+</head>
 
+<body id="page-top" background="<?= base_url('assets/img/green.jpg'); ?>">
+  
+  <!-- navbar permanen -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand ml-1" href="#" style="font-family: montserrat;">
-      GLOBAL MEKAR MANDIRI</a>
+    <div class="navbar-brand ml-1" href="#" style="font-family: montserrat;">
+      GLOBAL MEKAR MANDIRI</div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto pr-lg-3">
@@ -41,19 +50,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto pr-lg-0 p-3">
             <li class="nav-item active">
-              <a class="nav-link" href="<?php echo base_url() ?>">Home&nbsp;</a>
+              <a class="nav-link" href="<?php echo base_url() ?>">Home&nbsp;&nbsp;</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/profil">Profile&nbsp;</a>
+              <a class="nav-link" href="<?php echo base_url() ?>home/profil">Profile&nbsp;&nbsp;</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/about">About&nbsp;</a>
+              <a class="nav-link" href="<?php echo base_url() ?>home/about">About&nbsp;&nbsp;</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/gallery">&nbsp;&nbsp;Gallery&nbsp;&nbsp;</a>
+              <a class="nav-link" href="<?php echo base_url() ?>home/gallery"> Gallery&nbsp;</a>
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -68,12 +77,14 @@
             </li>
 
             <a class="nav-link" href="<?php echo base_url() ?>auth/login">
-              &nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;</button></a>
+              &nbsp;&nbsp;Login&nbsp;&nbsp;</button></a>
             </li>
           </ul>
         </div>
   </nav>
 
+  <br>
+    <br>
   <section id="portfolio">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
