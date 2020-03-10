@@ -153,9 +153,9 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-sm-6">
           <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-            <img class="img-fluid" src="<?= base_url(); ?>assets/img/it10.jpg" width="462" alt="">
+            <center><img class="img-fluid" src="<?= base_url(); ?>assets/img/it10.jpg" width="460" height="17" alt=""></center>
             <div class="portfolio-box-caption p-3">
               <div class="project-category text-white-50">
                 Category
@@ -169,3 +169,5 @@
       </div>
     </div>
   </section>
+
+  <br>
