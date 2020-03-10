@@ -1,9 +1,9 @@
-<?php
+ <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
 class Auth extends CI_Controller
-{
 
+{
     public function __construct()
     {
         parent::__construct();
@@ -30,7 +30,7 @@ class Auth extends CI_Controller
 
 
     private function _login()
-    {
+    {   
         $email = $this->input->post('email');
         $password = $this->input->post('password');
 
@@ -38,26 +38,36 @@ class Auth extends CI_Controller
 
 
         //jika usernya ada
-        if ($user) {
+        if ($user)
+        {
             //jika usernya aktif
-            if ($user['is_active'] == 1) {
+            if ($user['is_active'] == 1) 
+            {
                 //cek password
-                if (password_verify($password, $user['password'])) {
+                if (password_verify($password, $user['password']))
+                {
                     $data = [
                         'email' => $user['email'],
                         'role_id' => $user['role_id']
                     ];
                     $this->session->set_userdata($data);
                     redirect('afterlogin');
-                } else {
+                } 
+                else 
+                {
                     $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Wrong password! </div>');
                     redirect('auth/login');
                 }
-            } else {
+            } 
+            else 
+            {
                 $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> This email has not been activated ! </div>');
                 redirect('auth/login');
             }
-        } else {
+
+        } 
+        else 
+        {
 
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Email is not registered! </div>');
             redirect('auth/login');
@@ -76,11 +86,10 @@ class Auth extends CI_Controller
             'matches' => 'Password dont match!',
             'min_length' => 'Password too short!',
         ]);
-        $this->form_validation->set_rules('password2', 'Password', 'required|trim|min_length[3]|matches[password1]');
+        $this->form_validation->set_rules('password2', 'Password', 'required|trim|matches[password1]');
 
         if ($this->form_validation->run() == false) {
             $data['title'] = 'WPU User Registration';
-
             $this->load->view('templates/auth_header', $data);
             $this->load->view('auth/registration');
             $this->load->view('templates/auth_footer');
@@ -99,26 +108,27 @@ class Auth extends CI_Controller
                 'date_created' => time()
             ];
 
-            //siapakan token
-            $token = base64_encode(random_bytes(32));
+            //stream_filter_append(stream, filtername)kan token
+           /* $token = base64_encode(random_bytes(32));
             $user_token = [
                 'email' => $email,
                 'token' => $token,
                 'date_created' => time()
-            ];
+            ];*/
 
 
             $this->db->insert('user', $data);
-            $this->db->insert('user_token', $user_token);
+           /* $this->db->insert('user_token', $user_token);
 
-            $this->_sendEmail($email, 'verify');
+            $this->_sendEmail($email, 'verify');*/
 
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Congratulation! your acccount has been created. Please activate your account </div>');
-            redirect('auth');
+            redirect('auth/login');
         }
     }
 
 
+    /* 
     private function _sendEmail($token, $type)
     {
         $config = [
@@ -285,4 +295,5 @@ class Auth extends CI_Controller
             redirect('auth/login');
         }
     }
+    */
 }
