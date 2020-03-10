@@ -28,7 +28,7 @@
   <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
 
-   <!-- Theme CSS - Includes Bootstrap -->
+  <!-- Theme CSS - Includes Bootstrap -->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/creative.css">
 
 </head>
@@ -59,11 +59,12 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/about">About&nbsp;&nbsp;</a>
+              <a class="nav-link" href="<?php echo base_url() ?>home/about">About</a>
             </li>
 
             <li class="nav-item">
               <a class="nav-link" href="<?php echo base_url() ?>home/gallery"> Gallery&nbsp;</a>
+              <a class="nav-link" href="<?php echo base_url() ?>home/gallery">&nbsp;Gallery&nbsp;&nbsp;</a>
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

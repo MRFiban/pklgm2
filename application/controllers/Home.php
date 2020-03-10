@@ -21,7 +21,7 @@ class Home extends CI_Controller
 
 	function inventaris()
 	{
-	
+
 		$this->load->view('website/inventaris');
 		$this->load->view('templates/auth_footer');
 	}

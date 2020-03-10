@@ -19,7 +19,10 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" background="<?= base_url('assets/img/swiss.jpg'); ?>">
+
+  <!-- navbar -->
+  <!-- SUDAH DI LINK -->
 
 
   <!-- Masthead -->
@@ -175,9 +178,9 @@
       </div>
     </div>
   </section>
-<hr>
-<hr>
-<br>
+  <hr>
+  <hr>
+  <br>
   <!-- Call to Action Section -->
   <section class="page-section bg-primary text-white">
     <div class="container text-center">
@@ -192,7 +195,9 @@
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
           <h2 class="mt-0 text-center text-white">Contact Us !</h2>
-          <center><hr class="divider my-4"></center>
+          <center>
+            <hr class="divider my-4">
+          </center>
           <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
         </div>
       </div>
@@ -223,4 +228,5 @@
   <script src="js/creative.min.js"></script>
 
 </body>
+
 </html>
