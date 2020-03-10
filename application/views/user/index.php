@@ -63,7 +63,7 @@
 
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                    <i class="far fa-user"></i>
                     <span>My profile</span></a>
             </li>
 

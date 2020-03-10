@@ -112,7 +112,7 @@ class Auth extends CI_Controller
             $this->db->insert('user_token', $user_token);
 
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Congratulation! your acccount has been created. Please activate your account </div>');
-            redirect('auth');
+            redirect('auth/login');
         }
     }
 
