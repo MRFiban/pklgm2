@@ -33,53 +33,53 @@
 
 </head>
 
-<body id="page-top" background="<?= base_url('assets/img/green.jpg'); ?>">
-  <!-- navbar permanen -->
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="navbar-brand ml-1" href="#" style="font-family: montserrat;">
-      GLOBAL MEKAR MANDIRI</div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<!-- navbar permanen -->
 
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto pr-lg-3">
+<nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="navbar-brand ml-1" href="#" style="font-family: montserrat;">
+    GLOBAL MEKAR MANDIRI</div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto pr-lg-0 p-3">
-            <li class="nav-item active">
-              <a class="nav-link" href="<?php echo base_url() ?>">Home&nbsp;&nbsp;</a>
-            </li>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto pr-lg-3">
 
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/profil">Profile&nbsp;&nbsp;</a>
-            </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/about">About</a>
-            </li>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto pr-lg-0 p-3">
+          <li class="nav-item active">
+            <a class="nav-link" href="<?php echo base_url() ?>">Home&nbsp;&nbsp;</a>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/gallery">&nbsp;Gallery&nbsp;&nbsp;</a>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo base_url() ?>home/profil">Profile&nbsp;&nbsp;</a>
+          </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Product
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="<?php echo base_url() ?>home/electrical">Electrical</a>
-                <a class="dropdown-item" href="<?php echo base_url() ?>home/mechanical">Mechanical</a>
-                <div class="#"></div>
-                <a class="dropdown-item" href="<?php echo base_url() ?>home/informasi_teknologi">Informasi Tehnologi</a>
-              </div>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo base_url() ?>home/about">About</a>
+          </li>
 
-            <a class="nav-link" href="<?php echo base_url() ?>auth/login">
-              &nbsp;&nbsp;Login&nbsp;&nbsp;</button></a>
-            </li>
-          </ul>
-        </div>
-  </nav>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo base_url() ?>home/gallery">&nbsp;Gallery&nbsp;&nbsp;</a>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Product
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="<?php echo base_url() ?>home/electrical">Electrical</a>
+              <a class="dropdown-item" href="<?php echo base_url() ?>home/mechanical">Mechanical</a>
+              <div class="#"></div>
+              <a class="dropdown-item" href="<?php echo base_url() ?>home/informasi_teknologi">Informasi Tehnologi</a>
+            </div>
+          </li>
+
+          <a class="nav-link" href="<?php echo base_url() ?>auth/login">
+            &nbsp;&nbsp;Login&nbsp;&nbsp;</button></a>
+          </li>
+        </ul>
+      </div>
+</nav>

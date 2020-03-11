@@ -1,0 +1,12 @@
+.card-deck {
+position: static;
+}
+hr.divider {
+  max-width: 50%;
+  border-width: 0.2rem;
+  border-color: #f4623a;
+}
+
+
+
+    
