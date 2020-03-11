@@ -5,7 +5,8 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/doc.css">
 </head>
 
-<body>
+<body style="background-image:<?php echo base_url() ?>asset/img/nasabah.jpg">
+
     <br>
     <h1 class="text-center font-weight-bold">
         COMPANY PROFIL KAMI</h1>
