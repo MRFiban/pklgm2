@@ -33,7 +33,7 @@
 
 </head>
 
-
+<body background="<?= base_url(); ?>assets/img/green.jpg">
 <!-- navbar permanen -->
 
 <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
