@@ -10,4 +10,5 @@ class User extends CI_Controller
       echo $data['user']['name'];
       $this->load->view('user/index');
     }
+    
 }
