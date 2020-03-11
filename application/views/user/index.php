@@ -28,15 +28,12 @@
 
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
+<br>
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3"> <img src="<?= base_url('assets/img/logo_warna.png'); ?>" width="70" height="60" class="d-inline-block align-top rounded-circle"></div>
+                <div class="sidebar-brand-text mx-3"> <img src="<?= base_url('assets/img/logo_warna.png'); ?>" width="210" height="80" class="d-inline-block align-top"></div> 
             </a>
-
+<br>
             <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -279,7 +276,7 @@
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">VALERIE LUNA</span>
                                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
                             </a>
                             <!-- Dropdown - User Information -->
