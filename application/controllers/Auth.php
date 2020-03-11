@@ -31,7 +31,6 @@ class Auth extends CI_Controller
 
     }
 
-
     private function _login()
     {
         $email = $this->input->post('email');
@@ -62,51 +61,48 @@ class Auth extends CI_Controller
                     $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Wrong password! </div>');
                     redirect('auth/login');
                 }
+
             } 
             else 
             {
                 $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> This email has not been activated ! </div>');
                 redirect('auth/login');
             }
+
         } 
         else 
         {
-
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Email is not registered! </div>');
             redirect('auth/login');
         }
-    }
 
+    }
 
 
     public function registration()
     {
         $this->form_validation->set_rules('name', 'Name', 'required|trim');
-        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[user.email]', [
-            'is_unique' => 'this email has already registered!'
-        ]);
+        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[user.email]', ['is_unique' => 'this email has already registered!']);
+
         $this->form_validation->set_rules('password1', 'Password', 'required|trim|min_length[3]|matches[password2]', [
             'matches' => 'Password dont match!',
-            'min_length' => 'Password too short!',
-        ]);
+            'min_length' => 'Password too short!',]);
         $this->form_validation->set_rules('password2', 'Password', 'required|trim|min_length[3]|matches[password1]');
 
-        if ($this->form_validation->run() == false) {
-            $data['title'] = 'WPU User Registration';
-
-            $this->load->view('templates/auth_header', $data);
+        if ($this->form_validation->run() == false)
+        {
+            $this->load->view('templates/auth_header');
             $this->load->view('auth/registration');
             $this->load->view('templates/auth_footer');
-        } else {
+        } 
+        else
+        {
             $email = $this->input->post('email', true);
             $data = [
                 'name' => htmlspecialchars($this->input->post('name', true)),
                 'email' => htmlspecialchars($email),
                 'image' => 'default.jpg',
-                'password' => password_hash(
-                    $this->input->post('password1'),
-                    PASSWORD_DEFAULT
-                ),
+                'password' => password_hash($this->input->post('password1'),PASSWORD_DEFAULT),
                 'role_id' => 2,
                 'is_active' => 1,
                 'date_created' => time()
