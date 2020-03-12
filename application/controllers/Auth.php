@@ -90,8 +90,6 @@ class Auth extends CI_Controller
         $this->form_validation->set_rules('password2', 'Password', 'required|trim|min_length[3]|matches[password1]');
 
         $this->form_validation->set_rules('address', 'Adress', 'required|trim');
-        $this->form_validation->set_rules('contact_personal', 'CP', 'required|trim');
-        $this->form_validation->set_rules('contact_office', 'CO', 'required|trim');
 
         if ($this->form_validation->run() == false)
         {
@@ -108,8 +106,6 @@ class Auth extends CI_Controller
                 'image' => 'default.jpg',
                 'password' => password_hash($this->input->post('password1'),PASSWORD_DEFAULT),
                 'adress' => $this->input->post('address'),
-                'contact_personal' => $this->input->post('contact_personal'),
-                'contact_office' => $this->input->post('contact_office'),
                 'role_id' => 2,
                 'is_active' => 1,
                 'date_created' => time()
