@@ -31,7 +31,7 @@
 <br>
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-text mx-3"> <img src="<?= base_url('assets/img/logo_warna.png'); ?>" width="210" height="80" class="d-inline-block align-top"></div> 
+                <div class="sidebar-brand-text mx-3"> <img src="<?= base_url('assets/img/logo_warna.png'); ?>" width="225" height="80" class="d-inline-block align-top"></div> 
             </a>
 <br>
             <!-- Divider -->
@@ -60,7 +60,7 @@
 
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
-                    <i class="far fa-user"></i>
+                    <i class="far fa-fw fa-user"></i>
                     <span>My profile</span></a>
             </li>
 
@@ -111,7 +111,7 @@
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                <button class="rounded-circle border-0" id="Toggler"></button>
             </div>
 
         </ul>
@@ -276,8 +276,8 @@
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">VALERIE LUNA</span>
-                                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $user['name']; ?></span>
+                                <img class="<?= base_url('assets/img/profile/') . $user['image']; ?>">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
