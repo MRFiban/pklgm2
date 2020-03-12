@@ -21,7 +21,7 @@
 
   <!-- Custom styles for this template-->
   <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
-
+  
   <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/style.css">
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -33,12 +33,13 @@
 
 </head>
 
-<body background="<?= base_url(); ?>assets/img/">
   <!-- navbar permanen -->
 
   <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="navbar-brand ml-1" href="#" style="font-family: montserrat;">
-      GLOBAL MEKAR MANDIRI</div>
+    <a class="navbar-brand" href="#">
+    <img src="<?php echo base_url() ?>assets/img/xxx.png" width="150px" height="80px"/> 
+      </a></div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

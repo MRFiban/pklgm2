@@ -1,0 +1,12 @@
+.body{
+  color:white;
+  background-image: url('../img/hejo.jpg');
+  height:180%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.transparan{
+  background:rgba(0,0,0,0.3);
+}

@@ -1,3 +1,11 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/xex.css">
+</head>
+<div class="body">
+<div class="transparan">
+ 
   <!-- CAROSEL CODING -->
   <div class="img.resize">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -25,10 +33,9 @@
           <img src="<?php echo base_url() ?>assets/img/carousel.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>
-              <font color="black">ELECTRICAL
+              ELECTRICAL
             </h5>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </font>
           </div>
         </div>
       </div>
@@ -42,8 +49,7 @@
       </a>
     </div>
 
-
-    <div class="text text-center" style="font-family: montserrat;">
+    <div class="text text-center text-light" style="font-family: montserrat ; ">
       <br><br>
       <h4> SOFTWARE DEVELOPMENT • GREENTECH COMPANY • WEB DEVELOPMENT </h4>
       <h1 align="center">
