@@ -5,7 +5,9 @@
 </head>
 
 <body>
-    <center>
+<font size="20" face="montserrat">
+<center><B>GALLERY KAMI</b></center>
+</font>
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col mb-4">
                 <div class="card">
