@@ -50,6 +50,7 @@ class Home extends CI_Controller
 
 	function electrical()
 	{
+		$this->load->view('templates/auth_header');
 		$this->load->view('website/electrical');
 		$this->load->view('templates/auth_footer');
 	}

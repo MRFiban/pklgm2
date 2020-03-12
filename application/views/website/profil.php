@@ -5,15 +5,15 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/doc.css">
 </head>
 
-<body>
-
+<div class="body">
+<div class="transparan">
     <br>
     <h1 class="text-center font-weight-bold">
         COMPANY PROFIL KAMI</h1>
     <hr class="divider mx-auto">
 
     <!-- text -->
-    <p>
+    <p class="text-justify"> 
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat nostrum unde, eaque numquam culpa. Provident, quidem. Quidem architecto deleniti sequi labore recusandae quos vel, eveniet illum dolorum ducimus animi!
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, excepturi sed cupiditate, consequatur repudiandae sequi saepe veritatis tempora quibusdam accusamus error rem accusantium neque aliquam quidem fuga ipsum culpa consequuntur.
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima cupiditate accusamus atque, asperiores deserunt tempore nam suscipit enim aut culpa quo dicta perspiciatis fugiat quae? Ea nam dignissimos reiciendis possimus.
