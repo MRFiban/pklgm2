@@ -12,7 +12,7 @@
 
   <!-- Font Awesome Icons -->
   <link href="<?= base_url(); ?>assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/bandung.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -23,8 +23,9 @@
 <!-- navbar -->
 <!-- SUDAH DI LINK -->
 
-
 <!-- Masthead -->
+<div class="ress">
+    <div class="transparan">
 <header class="masthead">
   <div class="container h-100">
     <div class="row h-100 align-items-center justify-content-center text-center">

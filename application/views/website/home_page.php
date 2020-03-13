@@ -3,11 +3,11 @@
 <title></title>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/xex.css">
 </head>
-<div class="body">
-<div class="transparan">
- 
+<body>
+
   <!-- CAROSEL CODING -->
   <div class="img.resize">
+    <div class="box">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -49,6 +49,8 @@
       </a>
     </div>
 
+    <div class="ress">
+    <div class="transparan"> 
     <div class="text text-center text-light" style="font-family: montserrat ; ">
       <br><br>
       <h4> SOFTWARE DEVELOPMENT • GREENTECH COMPANY • WEB DEVELOPMENT </h4>
@@ -61,7 +63,7 @@
 
     <!-- Services Section -->
     <section class="page-section" id="services">
-      <div class="container ">
+      <div class="container">
         <hr class="divider my-4 fluid">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
@@ -115,7 +117,7 @@
           <div class="col-lg-4 mr-auto text-center">
             <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
             <!-- Make sure to change the email address in anchor text AND the link below! -->
-            <a class="d-block" href="mailto:contact@yourwebsite.com">globalmekarmandiri@gmail.com</a>
+            <a class="d-block" href="#"><font color="white">globalmekarmandiri@gmail.com</a>
           </div>
         </div>
       </div>

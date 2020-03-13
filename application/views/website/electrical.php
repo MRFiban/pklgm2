@@ -91,7 +91,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 ">
         <div class="img6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
+          <a class="portfolio-box" href="#">
             <img class="img-fluid" src="<?= base_url(); ?>assets/img/it10.jpg" alt="">
             <div class="portfolio-box-caption ">
               <div class="project-category">

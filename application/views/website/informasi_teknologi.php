@@ -12,9 +12,11 @@
   <title>
     GreenTech Company
   </title>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/doc.css">
 
 </head>
-  
+<div class="body">
+<div class="transparan">
   <!-- navbar permanen -->
 <!-- navbar permanen -->
 
