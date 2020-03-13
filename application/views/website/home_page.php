@@ -61,7 +61,7 @@
 
     <!-- Services Section -->
     <section class="page-section" id="services">
-      <div class="container">
+      <div class="container ">
         <hr class="divider my-4 fluid">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">

@@ -2,43 +2,17 @@
 <html lang="en">
 
 <head>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>
-    GreenTech Company
-  </title>
-
-
-
-  <!-- Custom fonts for this template-->
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/hesoyam.css">
-  <link href="<?= base_url('assets/'); ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-  <!-- Custom styles for this template-->
-  <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/style.css">
-  <link rel="stylesheet" href="<?php echo base_url() ?>assets/bootstrap/css/bootstrap.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
-
-   <!-- Theme CSS - Includes Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/creative.css">
-
+  <title>  GreenTech Company </title>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/doc.css">
 </head>
+<div class="body">
+<div class="transparan">
   
   <!-- navbar permanen -->
 <!-- navbar permanen -->
 
   <section id="portfolio">
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-5">
       <div class="row no-gutters">
         <div class="col-lg-4 col-sm-6">
           <div class="img1">
@@ -100,7 +74,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-6 ">
         <div class="img5">
           <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
             <img class="img-fluid" src="<?= base_url(); ?>assets/img/electrical5.jpg" alt="">
@@ -115,12 +89,12 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-6 ">
         <div class="img6">
           <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
             <img class="img-fluid" src="<?= base_url(); ?>assets/img/it10.jpg" alt="">
-            <div class="portfolio-box-caption p-3">
-              <div class="project-category text-white-50">
+            <div class="portfolio-box-caption ">
+              <div class="project-category">
                 Category
               </div>
               <div class="project-name">
@@ -134,4 +108,5 @@
     </div>
   </section>
 
-  <br>
+</body>
+</html>
