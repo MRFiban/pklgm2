@@ -52,7 +52,7 @@
     <div class="ress">
     <div class="transparan"> 
     <div class="text text-center text-light" style="font-family: montserrat ; ">
-      <br><br>
+      <br><br><br><br>
       <h4> SOFTWARE DEVELOPMENT • GREENTECH COMPANY • WEB DEVELOPMENT </h4>
       <h1 align="center">
         <u>
@@ -64,34 +64,34 @@
     <!-- Services Section -->
     <section class="page-section" id="services">
       <div class="container">
-        <hr class="divider my-4 fluid">
+        <hr class="divider my-1 fluid">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
               <i class="fas fa-4x fa-gem text-danger mb-4"></i>
               <h3 class="h4 mb-2">Sturdy Themes</h3>
-              <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+              <p class="text-muted mb-0"><font color="white">Our themes are updated regularly to keep them bug free!</p></font>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
               <i class="fas fa-4x fa-laptop-code text-danger mb-4"></i>
               <h3 class="h4 mb-2">Up to Date</h3>
-              <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+              <p class="text-muted mb-0" ><font color="white">All dependencies are kept current to keep things fresh.</p></font>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
               <i class="fas fa-4x fa-globe text-danger mb-4"></i>
               <h3 class="h4 mb-2">Ready to Publish</h3>
-              <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+              <p class="text-muted mb-0"><font color="white">You can use this design as is, or you can make changes!</p></font>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
               <i class="fas fa-4x fa-heart text-danger mb-4"></i>
               <h3 class="h4 mb-2">Made with Love</h3>
-              <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+              <p class="text-muted mb-0"><font color="white">Is it really open source if it's not made with love?</p></font>
             </div>
           </div>
         </div>
