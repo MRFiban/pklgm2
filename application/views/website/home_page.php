@@ -59,12 +59,11 @@
           <CENTER> CREATIVE & EXPERIENCED </CENTER>
         </u></h1>
       <h3> PT.GLOBAL MEKAR MANDIRI </h3>
+      <br><br><br><br>
+      <hr class="divider my-1 fluid mx-auto">
     </div>
 
     <!-- Services Section -->
-    <section class="page-section" id="services">
-      <div class="container">
-        <hr class="divider my-1 fluid">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
@@ -95,8 +94,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
 
     <!-- Contact Section -->
@@ -105,7 +102,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <h2 class="mt-0">Let's Get In Touch!</h2>
-            <hr class="divider my-4">
+            <hr class="divider mx-auto">
             <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
           </div>
         </div>

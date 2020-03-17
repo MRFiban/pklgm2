@@ -9563,7 +9563,7 @@ html {
 }
 
 hr.divider {
-  max-width: auto;
+  max-width: 70%;
   border-width: 0.2rem;
   border-color: #f4623a;
   
