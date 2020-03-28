@@ -39,12 +39,21 @@
 
                            <div class="form-group row">
                             <div class="col-sm-6 mb-3 mb-sm-0">
-                              <input type="address" class="form-control form-control-user" id="password1" name="password1" placeholder="City">
-                              <?= form_error('password1', '<small class="text-danger pl-3">', '</small>'); ?>
+                              <input type="city" class="form-control form-control-user" id="city" name="city" placeholder="City">
                             </div>
                             <div class="col-sm-6">
-                              <input type="adress" class="form-control form-control-user" id="Password2" name="password2" placeholder="Postal Code">
+                              <input type="postalcode" class="form-control form-control-user" id="postalcode" name="postalcode" placeholder="Postal Code">
                             </div>
+                          </div>
+<hr>
+                           <div class="form-group">
+                            <input type="text" class="form-control form-control-user" id="contact_personal" name="contact_personal" placeholder="Phone Number" value="<?= set_value('contact_personal'); ?>">
+                            <?= form_error('contact_personal', '<small class="text-danger pl-3">', '</small>');?>
+                          </div>
+<hr>
+                           <div class="form-group">
+                            <input type="text" class="form-control form-control-user" id="contact_office" name="contact_office" placeholder="Office Number">
+                            <?= form_error('contact_office', '<small class="text-danger pl-3">', '</small>'); ?>
                           </div>
 
                           <button type="submit" class="btn btn-primary btn-user btn-block">

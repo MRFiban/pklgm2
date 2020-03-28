@@ -9,7 +9,7 @@
 
     <br>
     <h1 class="text-center font-weight-bold">
-        COMPANY PROFIL KAMI</h1>
+        Our <?= $title;?></h1>
     <hr class="divider mx-auto">
 
     <!-- text -->

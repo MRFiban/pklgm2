@@ -1,4 +1,4 @@
-  <!-- CAROSEL CODING -->
+  <!-- Main Content -->
   <div class="img.resize">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -10,24 +10,23 @@
         <div class="carousel-item active">
           <img src="<?php echo base_url() ?>assets/img/it4.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>INFORMASI TEKNOLOGI</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3 class="text-info"><em><b>I.T Consult</em></h3>
+            <p class="text-warning">Kami selalu menyediakan layanan Konsultasi yang Terbaik dan Up to Date di bidang IT.<br> WEB Application, Android Programming, Software Development</b></p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="<?php echo base_url() ?>assets/images/yamami.jpg" electrical class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>MECHANICAL</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 class="text-success"><i><b>MECHCANICAL</i></h5>
+            <p class="text-warning">Berbagai macam Mesin Pengolah Limbah hingga Biodegradable merupakan produk unggulan Kami.<br> Mesin-mesin buatan Kami berkualitas tinggi dan sangat efisien untuk Pendauran Ulang</b></p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="<?php echo base_url() ?>assets/img/carousel.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>
-              <font color="black">ELECTRICAL
-            </h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h3><font color="gold"><em><b>ELECTRICAL</em></h4></font>
+            <p class="text-warning">Teknologi Listrik yang kami ciptakan merupakan teknologi yang Ramah Lingkungan.<br> Mulai dari PLTA, Panel Surya, Robotik, dan yang lainnya. 
+            </p>
             </font>
           </div>
         </div>
@@ -44,7 +43,7 @@
 
 
     <div class="text text-center" style="font-family: montserrat;">
-      <br><br>
+
       <h4> SOFTWARE DEVELOPMENT • GREENTECH COMPANY • WEB DEVELOPMENT </h4>
       <h1 align="center">
         <u>
@@ -56,42 +55,42 @@
     <!-- Services Section -->
     <section class="page-section" id="services">
       <div class="container">
-        <hr class="divider my-4 fluid">
+        <hr class="divider my-2 fluid">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
               <i class="fas fa-4x fa-gem text-danger mb-4"></i>
-              <h3 class="h4 mb-2">Sturdy Themes</h3>
-              <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+              <h3 class="h4 mb-2">ECO Tech</h3>
+              <p class="text-muted mb-0">Semua Produk yang kami ciptakan berorientasi Ramah Lingkungan!</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
               <i class="fas fa-4x fa-laptop-code text-danger mb-4"></i>
               <h3 class="h4 mb-2">Up to Date</h3>
-              <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+              <p class="text-muted mb-0">Kami juga sigap dan peka terhadap percepatan teknologi.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
               <i class="fas fa-4x fa-globe text-danger mb-4"></i>
-              <h3 class="h4 mb-2">Ready to Publish</h3>
-              <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+              <h3 class="h4 mb-2">International Network</h3>
+              <p class="text-muted mb-0">Perusahaan kami berstandar Internasional dengan Mitra di berbagai belahan dunia.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-5">
               <i class="fas fa-4x fa-heart text-danger mb-4"></i>
               <h3 class="h4 mb-2">Made with Love</h3>
-              <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+              <p class="text-muted mb-0">Produk yang unggul dan bermanfaat ialah yang dibuat dengan sepenuh hati.</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
 
     <!-- Contact Section -->
+  <div>
     <section class="page-section" id="contact">
       <div class="container">
         <div class="row justify-content-center">
@@ -114,7 +113,4 @@
         </div>
       </div>
     </section>
-
-    </body>
-
-    </html>
+  </div>

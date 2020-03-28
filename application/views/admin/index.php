@@ -1,10 +1,10 @@
-  <!-- Begin Page Content -->
+                <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800"><?= $title;?></h1>
 
                     <div class="card" style="width: 20rem;">
-                     <img class="card-img-top" src="<?= base_url('assets/img/profile/') . $user['image']; ?>"  alt="Card image cap">
+                     <img class="card-img-top" src="<?= base_url('assets/img/me.png'); ?>"  alt="Card image cap">
                         <div class="card-body">
                          <h5 class="card-title text-center"><b><font color="cyan"><?= $user['name']; ?></b></font></h5><hr/>
                          <p class="card-text"><b><font color="gold"><?= $user['email']; ?><br>

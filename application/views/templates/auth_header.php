@@ -33,12 +33,12 @@
 
 </head>
 
-<body background="<?= base_url(); ?>assets/img/">
+<body background="<?= base_url(); ?>assets/img/green.jpg">
   <!-- navbar permanen -->
 
   <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="navbar-brand ml-1" href="#" style="font-family: montserrat;">
-      GLOBAL MEKAR MANDIRI</div>
+    <img class="rounded-circle" src="<?= base_url('assets/img/logo_warna.png'); ?>" width="135" height="75"> 
+      </img>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -47,39 +47,68 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto pr-lg-3">
 
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto pr-lg-0 p-3">
+           
+            <!-- QUERY MENU -->
+            <?php 
+            $role_id = $this->session->userdata('role_id');
+            $queryMenu = "SELECT `user_menu`.`id`, `menu`
+                            FROM `user_menu` JOIN `user_access_menu` 
+                              ON `user_menu`.`id` = `user_access_menu`.`menu_id`
+                           WHERE `user_access_menu`.`role_id` = 4
+                        ORDER BY `user_access_menu`.`menu_id` ASC
+                        ";
+            $menu = $this->db->query($queryMenu)->result_array();  
+            ?>
+
+
+            <!-- LOOPING MENU -->
+            <?php foreach($menu as $m) : ?>
+            <li class=" nav-item  text-dark">
+                <?= $m['menu']; ?>
+            </li>
+
+            <!-- SIAPKAN SUB-MENU SESUAI MENU -->
+            <?php 
+            $menuId = $m['id'];
+            $querySubMenu = "SELECT *
+                               FROM `user_sub_menu` JOIN `user_menu`
+                                 ON `user_sub_menu`.`menu_id` = `user_menu`.`id`
+                              WHERE `user_sub_menu`.`menu_id` = $menuId
+                                AND `user_sub_menu`.`is_active` = 1
+                            ";
+            $subMenu = $this->db->query($querySubMenu)->result_array();
+            ?>
+
+            <?php foreach($subMenu as $sm) : ?>
+
+            <!-- Bantuan Visual Menu -->
+            <?php if ($title == $sm['title']) : ?>
             <li class="nav-item active">
-              <a class="nav-link" href="<?php echo base_url() ?>">Home&nbsp;&nbsp;</a>
-            </li>
-
+                <?php else : ?>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/profil">Profile&nbsp;&nbsp;</a>
-            </li>
+                <?php endif; ?>
 
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/about">About</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url() ?>home/gallery">&nbsp;Gallery&nbsp;&nbsp;</a>
+                <a class="nav-link" href="<?= base_url($sm['url']); ?>">
+                    <i class="<?= $sm['icon']; ?>"></i>
+                    <span><?= $sm['title']; ?></span></a>
+            </li>    
+            <?php endforeach; ?>
+            
+            <?php endforeach; ?>
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Product
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="<?php echo base_url() ?>home/electrical">Electrical</a>
-                <a class="dropdown-item" href="<?php echo base_url() ?>home/mechanical">Mechanical</a>
-                <div class="#"></div>
-                <a class="dropdown-item" href="<?php echo base_url() ?>home/informasi_teknologi">Informasi Tehnologi</a>
+                <a class="dropdown-item" href="<?= base_url('home/electrical'); ?>">Electrical</a>
+                <a class="dropdown-item" href="<?= base_url('home/mechanical'); ?>">Mechanical</a>
+                <a class="dropdown-item" href="<?= base_url('home/it_consult'); ?>">IT Consult</a>
               </div>
             </li>
 
-            <a class="nav-link" href="<?php echo base_url() ?>auth/login">
-              &nbsp;&nbsp;Login&nbsp;&nbsp;</button></a>
-            </li>
           </ul>
         </div>
   </nav>

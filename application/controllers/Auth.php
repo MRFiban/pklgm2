@@ -19,7 +19,8 @@ class Auth extends CI_Controller
 
         if ($this->form_validation->run() == false)
         {
-            $this->load->view('templates/auth_header');
+            $data['title'] = 'Login';
+            $this->load->view('templates/auth_header', $data);
             $this->load->view('auth/login');
             $this->load->view('templates/auth_footer');
         } 
@@ -54,7 +55,15 @@ class Auth extends CI_Controller
                     ];
 
                     $this->session->set_userdata($data);
-                    redirect('user');
+                    if ($user['role_id'] == 1)
+                    {
+                        redirect('admin');    
+                    }
+                    else
+                    {
+                        redirect('user'); 
+                    }  
+
                 } 
                 else
                 {
@@ -89,23 +98,34 @@ class Auth extends CI_Controller
             'min_length' => 'Password too short!',]);
         $this->form_validation->set_rules('password2', 'Password', 'required|trim|min_length[3]|matches[password1]');
 
-        $this->form_validation->set_rules('address', 'Adress', 'required|trim');
+        $this->form_validation->set_rules('address', 'Address', 'required|trim');
+
+        $this->form_validation->set_rules('contact_personal', 'CP', 'required|trim');
+        $this->form_validation->set_rules('contact_office', 'CO', 'required|trim');
 
         if ($this->form_validation->run() == false)
         {
-            $this->load->view('templates/auth_header');
+            $data['title'] = 'Registration';
+            $this->load->view('templates/auth_header', $data);
             $this->load->view('auth/registration');
             $this->load->view('templates/auth_footer');
         } 
         else
         {
+            $address = $this->input->post('address');
+            $city = $this->input->post('city');
+            $postalcode = $this->input->post('postalcode');
+            $combine = $address . ' ~ ' . $city .' ~ '. $postalcode;
+
             $email = $this->input->post('email', true);
             $data = [
                 'name' => htmlspecialchars($this->input->post('name', true)),
                 'email' => htmlspecialchars($email),
-                'image' => 'default.jpg',
+                'image' => 'default.png',
                 'password' => password_hash($this->input->post('password1'),PASSWORD_DEFAULT),
-                'adress' => $this->input->post('address'),
+                'address' => htmlspecialchars($combine),
+                'contact_personal' => $this->input->post('contact_personal'),
+                'contact_office' => $this->input->post('contact_office'),
                 'role_id' => 2,
                 'is_active' => 1,
                 'date_created' => time()
