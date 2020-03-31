@@ -1,13 +1,13 @@
 <!-- Footer -->
   <!-- Scroll to Top Button-->
   <div>
-    <a class="scroll-to-top rounded bg-primary" href="#carouselExampleCaptions">
+    <a class="scroll-to-top rounded bg-primary" href="#pagetop">
         <i class="fas fa-angle-up"></i>
     </a>
 
-            <footer class="sticky-footer bg-white">
+            <footer class="sticky-footer bg-dark">
                 <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
+                    <div class="copyright text-center my-auto text-info">
                         <span>Copyright &copy; Global Mekar Mandiri <?= date('Y'); ?></span>
                     </div>
                 </div>
