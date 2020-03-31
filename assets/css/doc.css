@@ -1,10 +1,23 @@
+.body{
+  color:white;
+  background-image: url('../img/green.jpg');
+  height:200%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.transparan{
+  background:rgba(0,0,0,0.3);
+}
 .card-deck {
 position: static;
+color:black;
 }
 hr.divider {
   max-width: 50%;
   border-width: 0.2rem;
-  border-color: #f4623a;
+  border-color: #eeebeb;
 }
 
 

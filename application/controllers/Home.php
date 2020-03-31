@@ -44,5 +44,5 @@ class Home extends CI_Controller
 		$this->load->view('home/gallery');
 		$this->load->view('templates/auth_footer');
 	}
-
+	
 }

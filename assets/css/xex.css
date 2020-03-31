@@ -1,0 +1,20 @@
+.ress{
+  color:black;
+  background-image: url('../img/hejo.jpg');
+  height:1900%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.transparan{
+  background:rgba(0,0,0,0.3);
+}
+.box {
+	background:-webkit-linear-gradient(top,#0F466E 0%,#387AAB 75%);
+
+ }
+ .text-muted{
+   color: white;
+ }
