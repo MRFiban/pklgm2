@@ -15,6 +15,7 @@
     $this->load->view('templates/user_footer');
   }
 
+
     <!--TABLES-->
 <div class="container">
   <div class="row">

@@ -4,6 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 Class Menu extends CI_Controller
 {
 
+
     public function __construct()
   {
     parent::__construct();
@@ -22,21 +23,22 @@ Class Menu extends CI_Controller
            $this->form_validation->set_rules('menu', 'Menu', 'required');
 
            if($this->form_validation->run() == false )
-
             {
+
+             {
               $this->load->view('templates/user_header', $data);
               $this->load->view('templates/sidebar', $data);
               $this->load->view('templates/topbar', $data);
               $this->load->view('menu/index', $data);
               $this->load->view('templates/user_footer');
-            }
+             }
 
            else
-           {
+            {
                   $this->db->insert('user_menu', ['menu' => $this->input->post('menu')]);
                   $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">New Menu Added</div>');
                   redirect('menu');
-           }
+            }
   }
 
   public function submenu()
