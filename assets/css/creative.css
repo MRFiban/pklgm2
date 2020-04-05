@@ -485,7 +485,6 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
 }
 
 .img-thumbnail {
@@ -9695,7 +9694,7 @@ header.masthead h1 {
 }
 
 #portfolio .container-fluid .portfolio-box {
-  position: relative;
+  position: auto;
   display: block;
 }
 

@@ -1,89 +1,86 @@
-<html>
+<div>
+    <h1 class="text-center font-weight-bold"><font color="cyan">
+        Our <?= $title;?></h1></font>
+    <hr class="divider mx-auto">
+</div>
 
-<head>
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/doc.css">
-</head>
+<br>
+<br>
 
-<body>
+ <div class="col-lg-12 align-center text-center">
+          <p class="text-white-75 font-weight-light mb-5"><b><font color='gold' face='copperplate gothic bold' size="5">Berikut ini adalah Profile Jajaran Staff Direksi PT. GM<sup>2</sup><br>dan hal-hal lainnya tentang kami !</font></b></p>
+          
+        </div>
+<br>
+
+
+<!-- cards -->
+
+    <div class="card-deck col-md-8 mx-auto">
+
+        <div class="card">
+            <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/prof.jpg" height="" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title text-center">Prof. Rudi Rahmat M</h5><hr/>
+                <p class="card-text text-center">Komisaris Utama.</p><hr/>
+               <p calss="card-text"><small class="text-muted">Date Created <?= date('d F Y'); ?> </small></font></p>
+            </div>
+        </div>
+
+           <div class="card">
+            <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/sumarna.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title text-center">Drs. H. Sumarna M.B.A</h5><hr/>
+                <p class="card-text text-center">Direktur Utama.</p><hr/>
+               <p calss="card-text"><small class="text-muted">Date Created <?= date('d F Y'); ?> </small></font></p>
+            </div>
+        </div>
+
+           <div class="card">
+            <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/arry.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title text-center">Arry Hutomo Ph.D</h5><hr/>
+                <p class="card-text text-center">Direktur Bisnis.</p><hr/>
+               <p calss="card-text"><small class="text-muted">Date Created <?= date('d F Y'); ?> </small></font></p>
+            </div>
+        </div>
+    </div>
+
 
     <br>
-    <h1 class="text-center font-weight-bold">
-        Our <?= $title;?></h1>
-    <hr class="divider mx-auto">
+    <br>
 
-    <!-- text -->
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat nostrum unde, eaque numquam culpa. Provident, quidem. Quidem architecto deleniti sequi labore recusandae quos vel, eveniet illum dolorum ducimus animi!
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, excepturi sed cupiditate, consequatur repudiandae sequi saepe veritatis tempora quibusdam accusamus error rem accusantium neque aliquam quidem fuga ipsum culpa consequuntur.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima cupiditate accusamus atque, asperiores deserunt tempore nam suscipit enim aut culpa quo dicta perspiciatis fugiat quae? Ea nam dignissimos reiciendis possimus.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non libero minus consectetur est saepe? Eos dolores consequuntur tenetur illo obcaecati voluptates, doloremque numquam sit suscipit architecto qui ex at sed.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam nam, non consequuntur quis cum repellendus perferendis nostrum quibusdam porro tenetur eum praesentium necessitatibus fugiat amet reiciendis dolore, fuga, iure consectetur!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur placeat nisi rem culpa nihil voluptatum accusantium velit eum asperiores necessitatibus ullam similique qui itaque vero rerum, minus quidem! Vitae, earum.
-    </p>
-    <!-- text -->
-
-
-
-    <!-- cards -->
+<!-- cards II -->
 
     <div class="card-deck col-md-8 mx-auto">
-        <div class="card">
-            <img class="card-img-top" src="<?php echo base_url() ?>assets/img/bola1.jpeg" alt="Card image cap">
+          <div class="card">
+            <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/rendro.jpg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title text-center">KAPTEN</h5>
-                <p class="card-text text-center">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text text-center">Last updated 3 mins ago<small class="text-muted"></small></p>
+                <h5 class="card-title text-center">Rendro Tjahjono S.H</h5><hr/>
+                <p class="card-text text-center">Direktur Hukum.</p><hr/>
+               <p calss="card-text"><small class="text-muted">Date Created <?= date('d F Y'); ?> </small></font></p>
             </div>
         </div>
-        <div class="card">
-            <img class="card-img-top" src="<?php echo base_url() ?>assets/img/bola1.jpeg" alt="Card image cap">
+
+          <div class="card">
+            <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/azizi.jpg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title text-center">Card title</h5>
-                <p class="card-text text-center">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text text-center"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h5 class="card-title text-center">Azizi Rois</h5><hr/>
+                <p class="card-text text-center">Direktur SDM.</p><hr/>
+               <p calss="card-text"><small class="text-muted">Date Created <?= date('d F Y'); ?> </small></font></p>
             </div>
         </div>
-        <div class="card">
-            <img class="card-img-top" src="<?php echo base_url() ?>assets/img/bola1.jpeg" alt="Card image cap">
+
+         <div class="card">
+            <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/nandang.jpg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-    </div>
-    <br><br>
-    <div class="card-deck col-md-8 mx-auto">
-        <div class="card">
-            <img class="card-img-top" src="<?php echo base_url() ?>assets/img/bola1.jpeg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="<?php echo base_url() ?>assets/img/bola1.jpeg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="<?php echo base_url() ?>assets/img/bola1.jpeg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h5 class="card-title text-center">Nandang Rochendi</h5><hr/>
+                <p class="card-text text-center">Direktur Teknik.</p><hr/>
+               <p calss="card-text"><small class="text-muted">Date Created <?= date('d F Y'); ?> </small></font></p>
             </div>
         </div>
     </div>
 
-    <!-- cards -->
-
-
-</body>
-
-</html>
+<br>
+<br>
+<br>

@@ -11,19 +11,11 @@ class Home extends CI_Controller
 		$this->load->helper('url');
 	}
 
-
 	public function index()
 	{
 		$data['title'] = 'Home';
 		$this->load->view('templates/auth_header', $data);
 		$this->load->view('home/index', $data);
-		$this->load->view('templates/auth_footer', $data);
-	}
-
-	public function inventaris()
-	{
-		$this->load->view('templates/auth_header');
-		$this->load->view('home/inventaris');
 		$this->load->view('templates/auth_footer');
 	}
 
@@ -31,7 +23,7 @@ class Home extends CI_Controller
 	{
 		$data['title'] = 'Profile';
 		$this->load->view('templates/auth_header', $data);
-		$this->load->view('home/profile');
+		$this->load->view('home/profile', $data);
 		$this->load->view('templates/auth_footer');
 	}
 
@@ -39,7 +31,7 @@ class Home extends CI_Controller
 	{
 		$data['title'] = 'About';
 		$this->load->view('templates/auth_header', $data);
-		$this->load->view('home/about');
+		$this->load->view('home/about', $data);
 		$this->load->view('templates/auth_footer');
 	}
 
@@ -47,31 +39,8 @@ class Home extends CI_Controller
 	{
 		$data['title'] = 'Gallery';
 		$this->load->view('templates/auth_header', $data);
-		$this->load->view('home/galery');
+		$this->load->view('home/gallery');
 		$this->load->view('templates/auth_footer');
 	}
 
-	public function electrical()
-	{
-		$data['title'] = 'Electrical';
-		$this->load->view('templates/auth_header', $data);
-		$this->load->view('home/electrical');
-		$this->load->view('templates/auth_footer');
-	}
-
-	public function mechanical()
-	{
-		$data['title'] = 'Mechanical';
-		$this->load->view('templates/auth_header', $data);
-		$this->load->view('home/mechanical');
-		$this->load->view('templates/auth_footer');
-	}
-
-	public function it_consult()
-	{
-		$data['title'] = 'IT Consult';
-		$this->load->view('templates/auth_header', $data);
-		$this->load->view('home/it_consult');
-		$this->load->view('templates/auth_footer');
-	}
 }

@@ -36,7 +36,7 @@
 <body background="<?= base_url(); ?>assets/img/green.jpg">
   <!-- navbar permanen -->
 
-  <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class=" navbar navbar-expand-lg navbar-dark bg-dark" id="pagetop">
     <img class="rounded-circle" src="<?= base_url('assets/img/logo_warna.png'); ?>" width="135" height="75"> 
       </img>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,9 +103,9 @@
                 Product
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="<?= base_url('home/electrical'); ?>">Electrical</a>
-                <a class="dropdown-item" href="<?= base_url('home/mechanical'); ?>">Mechanical</a>
-                <a class="dropdown-item" href="<?= base_url('home/it_consult'); ?>">IT Consult</a>
+                <a class="dropdown-item" href="<?= base_url('Product/electrical'); ?>">Electrical</a>
+                <a class="dropdown-item" href="<?= base_url('Product/mechanical'); ?>">Mechanical</a>
+                <a class="dropdown-item" href="<?= base_url('Product/it_consult'); ?>">IT Consult</a>
               </div>
             </li>
 
