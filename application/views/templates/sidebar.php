@@ -62,9 +62,6 @@
 
             <?php endforeach; ?>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
             <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('auth/logout'); ?>">
                     <i class="fas fa-sign-out-alt"></i>

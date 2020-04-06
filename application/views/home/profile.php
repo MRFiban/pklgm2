@@ -18,7 +18,7 @@
     <div class="card-deck col-md-8 mx-auto">
 
         <div class="card">
-            <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/prof.jpg" height="" alt="Card image cap">
+            <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/prof.jpg"  alt="Card image cap">
 
             <div class="card-body">
                 <h5 class="card-title text-center">Prof. Rudi Rahmat M</h5><hr/>
