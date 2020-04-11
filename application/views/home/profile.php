@@ -18,12 +18,12 @@
     <div class="card-deck col-md-8 mx-auto">
 
         <div class="card">
-            <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/prof.jpg"  alt="Card image cap">
+            <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/prof.jpg" alt="Card image cap">
 
             <div class="card-body">
-                <h5 class="card-title text-center">Prof. Rudi Rahmat M</h5><hr/>
-                <p class="card-text text-center">Komisaris Utama.</p><hr/>
-               <p calss="card-text"><small class="text-muted">Date Created <?= date('d F Y'); ?> </small></font></p>
+                <h5 class="card-title text-center text-dark">Prof. Rudi Rahmat M.Sc</font></h5><hr/>
+                <p class="card-text text-center text-dark">Komisaris Utama.</p><hr/>
+                <p calss="card-text"><small class="text-muted">GM2<sup>&copy;</sup> <?= date('Y'); ?> </small></font></p>
             </div>
         </div>
 
@@ -31,9 +31,9 @@
             <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/sumarna.jpg" alt="Card image cap">
 
             <div class="card-body">
-                <h5 class="card-title text-center">Drs. H. Sumarna M.B.A</h5><hr/>
-                <p class="card-text text-center">Direktur Utama.</p><hr/>
-               <p calss="card-text"><small class="text-muted">Date Created <?= date('d F Y'); ?> </small></font></p>
+                <h5 class="card-title text-center text-dark">Drs. H. Sumarna M.B.A</h5><hr/>
+                <p class="card-text text-center text-dark">Direktur Utama.</p><hr/>
+               <p calss="card-text"><small class="text-muted">GM2<sup>&copy;</sup> <?= date('Y'); ?> </small></font></p>
             </div>
         </div>
 
@@ -41,9 +41,9 @@
             <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/arry.jpg" alt="Card image cap">
 
             <div class="card-body">
-                <h5 class="card-title text-center">Arry Hutomo Ph.D</h5><hr/>
-                <p class="card-text text-center">Direktur Bisnis.</p><hr/>
-               <p calss="card-text"><small class="text-muted">Date Created <?= date('d F Y'); ?> </small></font></p>
+                <h5 class="card-title text-center text-dark">Arry Hutomo Ph.D</h5><hr/>
+                <p class="card-text text-center text-dark">Direktur Bisnis.</p><hr/>
+               <p calss="card-text"><small class="text-muted">GM2<sup>&copy;</sup> <?= date('Y'); ?> </small></font></p>
             </div>
         </div>
     </div>
@@ -58,27 +58,27 @@
           <div class="card">
             <img class="card-img-top" src="<?php echo base_url(); ?>assets/img/rendro.jpg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title text-center">Rendro Tjahjono S.H</h5><hr/>
-                <p class="card-text text-center">Direktur Hukum.</p><hr/>
-               <p calss="card-text"><small class="text-muted">Date Created <?= date('d F Y'); ?> </small></font></p>
+                <h5 class="card-title text-center text-dark">Rendro Tjahjono S.H</h5><hr/>
+                <p class="card-text text-center text-dark">Direktur Legal Hukum.</p><hr/>
+               <p calss="card-text"><small class="text-muted">GM2<sup>&copy;</sup> <?= date('Y'); ?> </small></font></p>
             </div>
         </div>
 
           <div class="card">
             <img class="card-img-top" src="<?php echo base_url() ?>assets/img/azizi.jpg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title text-center">Azizi Rois</h5><hr/>
-                <p class="card-text text-center">Direktur SDM.</p><hr/>
-               <p calss="card-text"><small class="text-muted">Date Created <?= date('d F Y'); ?> </small></font></p>
+                <h5 class="card-title text-center text-dark">Moch. Azizi Rois, S.Pd</h5><hr/>
+                <p class="card-text text-center text-dark">Direktur SDM.</p><hr/>
+               <p calss="card-text"><small class="text-muted">GM2<sup>&copy;</sup> <?= date('Y'); ?> </small></font></p>
             </div>
         </div>
 
          <div class="card">
             <img class="card-img-top" src="<?php echo base_url() ?>assets/img/nandang.jpg" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title text-center">Nandang Rochendi</h5><hr/>
-                <p class="card-text text-center">Direktur Teknik.</p><hr/>
-               <p calss="card-text"><small class="text-muted">Date Created <?= date('d F Y'); ?> </small></font></p>
+                <h5 class="card-title text-center text-dark">H. Nandang Rochendi</h5><hr/>
+                <p class="card-text text-center text-dark">Direktur Teknik.</p><hr/>
+               <p calss="card-text"><small class="text-muted">GM2<sup>&copy;</sup> <?= date('Y'); ?> </small></font></p>
             </div>
         </div>
     </div>

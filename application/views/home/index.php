@@ -59,7 +59,6 @@
       <div class="container">
         <H3 class="text-center"><font color="white">&nbsp; &nbsp; &nbsp; CREATIVE & EXPERIENCED </font></H4>
 
-        <hr class="divider">
         <hr class="divider my-2 fluid">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">

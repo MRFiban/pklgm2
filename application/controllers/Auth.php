@@ -27,12 +27,12 @@ class Auth extends CI_Controller
         else
         {
             //validasinya success
-            $this->_login();
+            $this->cek_role();
         }
 
     }
 
-    private function _login()
+    private function cek_role()
     {
         $email = $this->input->post('email');
         $password = $this->input->post('password');

@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 31, 2020 at 07:55 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.3.13
+-- Waktu pembuatan: 09 Apr 2020 pada 19.03
+-- Versi server: 10.4.11-MariaDB
+-- Versi PHP: 7.3.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,30 +25,28 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `produk`
+-- Struktur dari tabel `produk`
 --
 
 CREATE TABLE `produk` (
-  `id_produk` int(100) NOT NULL,
+  `id` int(100) NOT NULL,
   `nama_produk` varchar(128) NOT NULL,
   `deskripsi` varchar(128) NOT NULL,
   `kategori` varchar(128) NOT NULL,
-  `harga` varchar(100) NOT NULL,
-  `stok` int(100) NOT NULL,
-  `gambar` text NOT NULL
+  `harga` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `produk`
+-- Dumping data untuk tabel `produk`
 --
 
-INSERT INTO `produk` (`id_produk`, `nama_produk`, `deskripsi`, `kategori`, `harga`, `stok`, `gambar`) VALUES
-(1, 'IPAL', 'Mesin Pengolah Limbah Industri', 'Mechanic', '$ 17.000,00', 50, '');
+INSERT INTO `produk` (`id`, `nama_produk`, `deskripsi`, `kategori`, `harga`) VALUES
+(1, 'IPAL', 'Mesin Pengolah Limbah Industri', 'Mechanic', '$ 17.000,00');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -66,7 +64,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `image`, `password`, `address`, `contact_personal`, `contact_office`, `role_id`, `is_active`, `date_created`) VALUES
@@ -74,12 +72,13 @@ INSERT INTO `user` (`id`, `name`, `email`, `image`, `password`, `address`, `cont
 (28, 'Jaydane Khalid', 'jaydanekhalid@gmail.com', 'default.png', '$2y$10$LklnDEx93YoeBlt4NhFzcuPfCK6V1RoHC6g0HCEIsNwGaet1nd4BK', 'Jl.Sumbersari Rt.3/Rw.8 ~ Bandung ~ 100193', '+62 859-5167-588', '(022) 822-1234-5', 1, 1, 1584004908),
 (31, 'Antonie Griezmann', 'antogrizi@gmail.com', 'default.png', '$2y$10$r5O/f7xVWm.Ef/WRTyBuzeT/bzLtp2/DHfQPq6uePPQPLYSaVCmG6', 'St. Etienne street ~ Paris ~ 173', '+83 821-9323-264', '(023) 856-3454-2', 2, 1, 1584431130),
 (33, 'Nick Mc\'Samsing', 'nicknicenaughty10@gmail.com', 'default.png', '$2y$10$nVRuCWQ8CYjtTikJj3q5EOJoc1layALlHw/NUvS750Qfxums5YX6u', 'Roughneck Street Pavilion A-17 ~ Nevada ~ 60113', '+62 883-7436-981', '(061) 856-7156-9', 2, 1, 1585328587),
-(34, 'Axel Mortdecai', 'mortdecaiaxel77@gmail.com', 'default.png', '$2y$10$.Xy.RF/IHhwrITJKYXgAduS/1HNt5RjNQOERyihJFqKHGrxTWJA9m', 'Spinoza Street M 16 ~ London ~ 7311', '+16 883-7436-684', '(111) 856-3123-2', 2, 1, 1585404781);
+(34, 'Axel Mortdecai', 'mortdecaiaxel77@gmail.com', 'default.png', '$2y$10$.Xy.RF/IHhwrITJKYXgAduS/1HNt5RjNQOERyihJFqKHGrxTWJA9m', 'Spinoza Street M 16 ~ London ~ 7311', '+16 883-7436-684', '(111) 856-3123-2', 2, 1, 1585404781),
+(35, 'Oscar', 'oscaraze@gmail.com', 'default.png', '$2y$10$hPTRnkhu44OCjPp.3H5XgeA8Xc8FEaACbRQU7t3Dd8Qnz7m.gp9My', 'Jl. Perjuangan ~ Berastagi ~ 93211', '+62 883-7436-684', '(023) 856-3454-1', 2, 1, 1585853964);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_access_menu`
+-- Struktur dari tabel `user_access_menu`
 --
 
 CREATE TABLE `user_access_menu` (
@@ -89,7 +88,7 @@ CREATE TABLE `user_access_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user_access_menu`
+-- Dumping data untuk tabel `user_access_menu`
 --
 
 INSERT INTO `user_access_menu` (`id`, `role_id`, `menu_id`) VALUES
@@ -102,7 +101,7 @@ INSERT INTO `user_access_menu` (`id`, `role_id`, `menu_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_menu`
+-- Struktur dari tabel `user_menu`
 --
 
 CREATE TABLE `user_menu` (
@@ -111,7 +110,7 @@ CREATE TABLE `user_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user_menu`
+-- Dumping data untuk tabel `user_menu`
 --
 
 INSERT INTO `user_menu` (`id`, `menu`) VALUES
@@ -119,13 +118,12 @@ INSERT INTO `user_menu` (`id`, `menu`) VALUES
 (2, 'User\r\n'),
 (4, 'Menu'),
 (5, 'Home'),
-(8, 'Product'),
-(15, 'Babik');
+(8, 'Product');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_role`
+-- Struktur dari tabel `user_role`
 --
 
 CREATE TABLE `user_role` (
@@ -134,7 +132,7 @@ CREATE TABLE `user_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user_role`
+-- Dumping data untuk tabel `user_role`
 --
 
 INSERT INTO `user_role` (`id`, `role`) VALUES
@@ -146,7 +144,7 @@ INSERT INTO `user_role` (`id`, `role`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_sub_menu`
+-- Struktur dari tabel `user_sub_menu`
 --
 
 CREATE TABLE `user_sub_menu` (
@@ -159,20 +157,19 @@ CREATE TABLE `user_sub_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user_sub_menu`
+-- Dumping data untuk tabel `user_sub_menu`
 --
 
 INSERT INTO `user_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active`) VALUES
 (1, 1, 'Dashboard', 'admin', 'fas fa-fw fa-tachometer-alt ', 1),
 (2, 2, 'My Profile', 'user', 'fas fa-fw fa-user', 1),
-(3, 1, 'Product', 'admin\r\n', 'fas fa-fw fa-folder', 1),
+(3, 2, 'Product', 'product\r\n', 'fas fa-fw fa-shopping-cart', 1),
 (4, 2, 'Edit Profile', 'user/edit', 'fas fa-fw fa-user-edit', 1),
 (5, 4, 'Menu Management', 'menu', 'fas fa-fw fa-folder', 1),
 (6, 5, 'Home', 'home/index\r\n', '', 1),
 (7, 5, 'Profile', 'home/profile', '', 1),
 (8, 5, 'About', 'home/about', '', 1),
 (9, 5, 'Gallery', 'home/gallery', '', 1),
-(10, 5, 'Product', 'product\r\n', '', 0),
 (11, 5, 'Login', 'auth/login', '', 1),
 (12, 5, 'Electrical', 'product/electrical', '', 0),
 (13, 4, 'Sub Menu Management', 'menu/submenu', 'fas fa-fw fa-folder-open', 1),
@@ -183,71 +180,71 @@ INSERT INTO `user_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active
 --
 
 --
--- Indexes for table `produk`
+-- Indeks untuk tabel `produk`
 --
 ALTER TABLE `produk`
-  ADD PRIMARY KEY (`id_produk`);
+  ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user_access_menu`
+-- Indeks untuk tabel `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user_menu`
+-- Indeks untuk tabel `user_menu`
 --
 ALTER TABLE `user_menu`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user_role`
+-- Indeks untuk tabel `user_role`
 --
 ALTER TABLE `user_role`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user_sub_menu`
+-- Indeks untuk tabel `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
--- AUTO_INCREMENT for table `user_access_menu`
+-- AUTO_INCREMENT untuk tabel `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `user_menu`
+-- AUTO_INCREMENT untuk tabel `user_menu`
 --
 ALTER TABLE `user_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT for table `user_role`
+-- AUTO_INCREMENT untuk tabel `user_role`
 --
 ALTER TABLE `user_role`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `user_sub_menu`
+-- AUTO_INCREMENT untuk tabel `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;

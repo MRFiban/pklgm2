@@ -24,14 +24,12 @@ Class Menu extends CI_Controller
 
            if($this->form_validation->run() == false )
             {
-
-             {
               $this->load->view('templates/user_header', $data);
               $this->load->view('templates/sidebar', $data);
               $this->load->view('templates/topbar', $data);
               $this->load->view('menu/index', $data);
               $this->load->view('templates/user_footer');
-             }
+            }
 
            else
             {

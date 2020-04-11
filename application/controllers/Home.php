@@ -22,10 +22,8 @@ class Home extends CI_Controller
 	public function profile()
 	{
 		$data['title'] = 'Profile';
-		$data['user'] = $this->db->get('user')->result_array();
-
 		$this->load->view('templates/auth_header', $data);
-		$this->load->view('home/profile', $data);
+		$this->load->view('home/profile');
 		$this->load->view('templates/auth_footer');
 	}
 
