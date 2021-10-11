@@ -47,6 +47,15 @@
   box-sizing: border-box;
 }
 
+
+@media screen and (min-width: 320px) {
+  .card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+  }
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -9562,7 +9571,7 @@ html {
 }
 
 hr.divider {
-  max-width: 3.25rem;
+  padding: 0 300px 0 300px;
   border-width: 0.2rem;
   border-color: #f4623a;
 }
